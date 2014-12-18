@@ -7,7 +7,6 @@
 //
 
 #import "LBDataManager.h"
-#import "LBScorecard.h"
 
 @interface LBDataManager ()
 

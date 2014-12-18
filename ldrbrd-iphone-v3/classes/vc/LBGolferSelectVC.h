@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import "SWRevealViewController.h"
+#import "LBDataManager.h"
 
 @interface LBGolferSelectVC : UIViewController
 

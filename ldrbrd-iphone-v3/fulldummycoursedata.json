@@ -1,0 +1,182 @@
+{
+    "courseHoleMap": {
+        "7f500b91-cec5-4573-921a-ac2d3c2ca1af": {
+            "0": {
+                "id": "58353147-4fea-4ea0-88a6-aa38662577cf",
+                "name": "Hole No. 1",
+                "holeDistance": 356,
+                "holeDescription": "Water on the right, green tight to left. protected by bunkers on the right",
+                "holeNumber": 1,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "1": {
+                "id": "17886c62-1784-487b-920a-58707f99c3e5",
+                "name": "Hole No. 2",
+                "holeDistance": 269,
+                "holeDescription": "Short par four, green obviewscated by hill on the left. 3 iron to right of hill, wedge to green. ",
+                "holeNumber": 2,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "2": {
+                "id": "34749cf0-b4ab-456d-ae83-96292ce353c2",
+                "name": "Hole No. 3",
+                "holeDistance": 155,
+                "holeDescription": "Short par 3 down hill, tee point points left of green, which is protected on the front left and right by bunkers",
+                "holeNumber": 3,
+                "par": 3,
+                "holeImageId": ""
+            },
+            "3": {
+                "id": "0fc7f457-d4b0-47f4-9234-84b9fa120c1d",
+                "name": "Hole No. 4",
+                "holeDistance": 368,
+                "holeDescription": "Long par 4, the most challenging hole in one the course. Drive straight is not useful, lay up to fairway centre or draw the ball with driver.",
+                "holeNumber": 4,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "4": {
+                "id": "9411afdb-4061-4ec6-86b5-eeb695cfb896",
+                "name": "Hole No. 5",
+                "holeDistance": 480,
+                "holeDescription": "Short par 5. get over the water or lay up to the left of it. Green has water to the left, with bunkers around the front left and right.",
+                "holeNumber": 5,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "5": {
+                "id": "f548fe74-c01b-47d0-966b-6390fb807a34",
+                "name": "Hole No. 6",
+                "holeDistance": 172,
+                "holeDescription": "Longish par 3, the wind is usually and issue up around the green, which is protected by bunkers at the back and right.",
+                "holeNumber": 6,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "6": {
+                "id": "973b919a-5499-4205-91be-0a5f1e5e4750",
+                "name": "Hole No. 7",
+                "holeDistance": 331,
+                "holeDescription": "The landing zone for most drivers is around the two bunkers. Hit over them , or short. left has trouble.",
+                "holeNumber": 7,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "7": {
+                "id": "23d06519-70bc-4100-88b9-11cb9b826467",
+                "name": "Hole No. 8",
+                "holeDistance": 132,
+                "holeDescription": "Get over the water and stay out of the bunkers. aim a little left, you always go right",
+                "holeNumber": 8,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "8": {
+                "id": "31ab95fb-adad-47ba-a927-fe048c8a2bb4",
+                "name": "Hole No. 9",
+                "holeDistance": 467,
+                "holeDescription": "Get out your driver. There's water on the right but there's plenty of fairway to play with. Green has some bunker coverage at the front right and left but is generally approachable from the left side of the fw. ",
+                "holeNumber": 9,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "9": {
+                "id": "58353147-4fea-4ea0-88a6-aa38662577cf",
+                "name": "Hole No. 1",
+                "holeDistance": 356,
+                "holeDescription": "Water on the right, green tight to left. protected by bunkers on the right",
+                "holeNumber": 10,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "10": {
+                "id": "17886c62-1784-487b-920a-58707f99c3e5",
+                "name": "Hole No. 2",
+                "holeDistance": 269,
+                "holeDescription": "Short par four, green obviewscated by hill on the left. 3 iron to right of hill, wedge to green. ",
+                "holeNumber": 11,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "11": {
+                "id": "34749cf0-b4ab-456d-ae83-96292ce353c2",
+                "name": "Hole No. 3",
+                "holeDistance": 155,
+                "holeDescription": "Short par 3 down hill, tee point points left of green, which is protected on the front left and right by bunkers",
+                "holeNumber": 12,
+                "par": 3,
+                "holeImageId": ""
+            },
+            "12": {
+                "id": "0fc7f457-d4b0-47f4-9234-84b9fa120c1d",
+                "name": "Hole No. 4",
+                "holeDistance": 368,
+                "holeDescri5ption": "Long par 4, the most challenging hole in one the course. Drive straight is not useful, lay up to fairway centre or draw the ball with driver.",
+                "holeNumber": 13,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "13": {
+                "id": "9411afdb-4061-4ec6-86b5-eeb695cfb896",
+                "name": "Hole No. 5",
+                "holeDistance": 480,
+                "holeDescription": "Short par 5. get over the water or lay up to the left of it. Green has water to the left, with bunkers around the front left and right.",
+                "holeNumber": 14,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "14": {
+                "id": "f548fe74-c01b-47d0-966b-6390fb807a34",
+                "name": "Hole No. 6",
+                "holeDistance": 172,
+                "holeDescription": "Longish par 3, the wind is usually and issue up around the green, which is protected by bunkers at the back and right.",
+                "holeNumber": 15,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "15": {
+                "id": "973b919a-5499-4205-91be-0a5f1e5e4750",
+                "name": "Hole No. 7",
+                "holeDistance": 340,
+                "holeDescription": "The landing zone for most drivers is around the two bunkers. Hit over them , or short. left has trouble.",
+                "holeNumber": 16,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "16": {
+                "id": "23d06519-70bc-4100-88b9-11cb9b826467",
+                "name": "Hole No. 8",
+                "holeDistance": 132,
+                "holeDescription": "Get over the water and stay out of the bunkers. aim a little left, you always go right",
+                "holeNumber": 17,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "17": {
+                "id": "31ab95fb-adad-47ba-a927-fe048c8a2bb4",
+                "name": "Hole No. 9",
+                "holeDistance": 567,
+                "holeDescription": "Get out your driver. There's water on the right but there's plenty of fairway to play with. Green has some bunker coverage at the front right and left but is generally approachable from the left side of the fw. ",
+                "holeNumber": 18,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+        }
+    }
+}

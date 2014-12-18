@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import "SWRevealViewController.h"
+#import "LBDataManager.h"
 
 @interface LBLocationManager : NSObject <CLLocationManagerDelegate> {
     CLLocationManager *locationManager;

@@ -8,6 +8,7 @@
 
 #import "LBStartRoundCourseVC.h"
 #import "LBScorecardUtils.h"
+#import "LBDataManager.h"
 
 @interface LBStartRoundCourseVC ()
 

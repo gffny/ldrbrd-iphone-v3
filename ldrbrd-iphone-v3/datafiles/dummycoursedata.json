@@ -1,0 +1,26 @@
+{
+    "courseHoleMap": {
+        "7f500b91-cec5-4573-921a-ac2d3c2ca1af": {
+            "0": {
+                "id": "58353147-4fea-4ea0-88a6-aa38662577cf",
+                "name": "Hole No. 1",
+                "holeDistance": 356,
+                "holeDescription": "Water on the right, green tight to left. protected by bunkers on the right",
+                "holeNumber": 1,
+                "index": 1,
+                "par": 4,
+                "holeImageId": ""
+            },
+            "1": {
+                "id": "17886c62-1784-487b-920a-58707f99c3e5",
+                "name": "Hole No. 2",
+                "holeDistance": 269,
+                "holeDescription": "Short par four, green obviewscated by hill on the left. 3 iron to right of hill, wedge to green. ",
+                "holeNumber": 2,
+                "index": 2,
+                "par": 4,
+                "holeImageId": ""
+            }
+        }
+    }
+}

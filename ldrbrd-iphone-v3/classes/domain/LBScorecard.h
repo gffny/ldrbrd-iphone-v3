@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "SWRevealViewController.h"
 #import "JSONModel.h"
+#import "LBCourse.h"
 
 @protocol LBScorecard
 

@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "SWRevealViewController.h"
+#import "LBScorecard.h"
 #import "LBCourse.h"
 #import "LBGolfer.h"
-#import "LBScorecard.h"
 
 @interface LBDataManager : NSObject
 

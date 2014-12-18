@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LBScorecard.h"
 #import "LBCourse.h"
 
 @interface LBScorecardUtils : NSObject
