@@ -10,7 +10,6 @@
 #import "LBPlayGolfVC.h"
 #import "LBGolfShotProfiler.h"
 #import "LBCourse.h"
-#import "LBDummyData.h"
 #import "LBLocationManager.h"
 #import "LBRestFacade.h"
 #import "LBScorecardUtils.h"

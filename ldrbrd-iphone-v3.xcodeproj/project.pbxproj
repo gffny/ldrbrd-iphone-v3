@@ -9,24 +9,9 @@
 /* Begin PBXBuildFile section */
 		50191F651A43842A00548963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F641A43842A00548963 /* main.m */; };
 		50191F681A43842A00548963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F671A43842A00548963 /* AppDelegate.m */; };
-		50191F711A43842A00548963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50191F6F1A43842A00548963 /* Main.storyboard */; };
 		50191F731A43842A00548963 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50191F721A43842A00548963 /* Images.xcassets */; };
 		50191F761A43842A00548963 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50191F741A43842A00548963 /* LaunchScreen.xib */; };
 		50191F821A43842B00548963 /* ldrbrd_iphone_v3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F811A43842B00548963 /* ldrbrd_iphone_v3Tests.m */; };
-		50191FC01A43907700548963 /* LBCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F8E1A43907700548963 /* LBCourse.m */; };
-		50191FC11A43907700548963 /* LBCourseHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F901A43907700548963 /* LBCourseHole.m */; };
-		50191FC21A43907700548963 /* LBDummyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F921A43907700548963 /* LBDummyData.m */; };
-		50191FC31A43907700548963 /* LBGolfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F941A43907700548963 /* LBGolfer.m */; };
-		50191FC41A43907700548963 /* LBScorecard.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F961A43907700548963 /* LBScorecard.m */; };
-		50191FC51A43907700548963 /* LBCourseDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F991A43907700548963 /* LBCourseDescription.m */; };
-		50191FC61A43907700548963 /* LBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F9B1A43907700548963 /* LBDataManager.m */; };
-		50191FC71A43907700548963 /* LBJsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F9D1A43907700548963 /* LBJsonData.m */; };
-		50191FC81A43907700548963 /* LBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191F9F1A43907700548963 /* LBLocationManager.m */; };
-		50191FC91A43907700548963 /* LBPlayerSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FA11A43907700548963 /* LBPlayerSummaryView.m */; };
-		50191FCA1A43907700548963 /* LBRestFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FA31A43907700548963 /* LBRestFacade.m */; };
-		50191FCB1A43907700548963 /* LBGolfShotProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FA61A43907700548963 /* LBGolfShotProfiler.m */; };
-		50191FCC1A43907700548963 /* LBScorecardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FA81A43907700548963 /* LBScorecardUtils.m */; };
-		50191FCD1A43907700548963 /* UIColor+lbColours.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FAA1A43907700548963 /* UIColor+lbColours.m */; };
 		50191FCE1A43907700548963 /* LBGolferSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FAD1A43907700548963 /* LBGolferSelectVC.m */; };
 		50191FCF1A43907700548963 /* LBLandingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FAF1A43907700548963 /* LBLandingVC.m */; };
 		50191FD01A43907700548963 /* lbMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FB11A43907700548963 /* lbMainVC.m */; };
@@ -38,7 +23,9 @@
 		50191FD61A43907700548963 /* LBStartRoundCourseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FBD1A43907700548963 /* LBStartRoundCourseVC.m */; };
 		50191FD71A43907700548963 /* LBStartRoundDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FBF1A43907700548963 /* LBStartRoundDetailVC.m */; };
 		506A63F91A439A5600D4833D /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506A63F71A439A5600D4833D /* iPhone.storyboard */; };
-		A72FFCC074B420F23463A3D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FDF9E883066621FFF6623B /* libPods.a */; };
+		506A64121A443E9200D4833D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A63FF1A443DD000D4833D /* NotificationCenter.framework */; };
+		506A64181A443FE400D4833D /* LBCourseDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A64151A443FE400D4833D /* LBCourseDescription.m */; };
+		506A64191A443FE400D4833D /* LBPlayerSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A64171A443FE400D4833D /* LBPlayerSummaryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +36,44 @@
 			remoteGlobalIDString = 50191F5E1A43842A00548963;
 			remoteInfo = "ldrbrd-iphone-v3";
 		};
+		506A65EC1A44879F00D4833D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 506A65901A4474C000D4833D;
+			remoteInfo = ldrbrdios;
+		};
+		506A65EE1A44879F00D4833D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 506A659B1A4474C000D4833D;
+			remoteInfo = ldrbrdiosTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		506A64111A443DD000D4833D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506A64451A44411D00D4833D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		50191F5F1A43842A00548963 /* ldrbrd-iphone-v3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ldrbrd-iphone-v3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,41 +81,11 @@
 		50191F641A43842A00548963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50191F661A43842A00548963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		50191F671A43842A00548963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		50191F701A43842A00548963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50191F721A43842A00548963 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50191F751A43842A00548963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		50191F7B1A43842A00548963 /* ldrbrd-iphone-v3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ldrbrd-iphone-v3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50191F801A43842B00548963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50191F811A43842B00548963 /* ldrbrd_iphone_v3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ldrbrd_iphone_v3Tests.m; sourceTree = "<group>"; };
-		50191F8D1A43907700548963 /* LBCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCourse.h; sourceTree = "<group>"; };
-		50191F8E1A43907700548963 /* LBCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCourse.m; sourceTree = "<group>"; };
-		50191F8F1A43907700548963 /* LBCourseHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCourseHole.h; sourceTree = "<group>"; };
-		50191F901A43907700548963 /* LBCourseHole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCourseHole.m; sourceTree = "<group>"; };
-		50191F911A43907700548963 /* LBDummyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDummyData.h; sourceTree = "<group>"; };
-		50191F921A43907700548963 /* LBDummyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDummyData.m; sourceTree = "<group>"; };
-		50191F931A43907700548963 /* LBGolfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBGolfer.h; sourceTree = "<group>"; };
-		50191F941A43907700548963 /* LBGolfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBGolfer.m; sourceTree = "<group>"; };
-		50191F951A43907700548963 /* LBScorecard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBScorecard.h; sourceTree = "<group>"; };
-		50191F961A43907700548963 /* LBScorecard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBScorecard.m; sourceTree = "<group>"; };
-		50191F971A43907700548963 /* LBConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBConstant.h; sourceTree = "<group>"; };
-		50191F981A43907700548963 /* LBCourseDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCourseDescription.h; sourceTree = "<group>"; };
-		50191F991A43907700548963 /* LBCourseDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCourseDescription.m; sourceTree = "<group>"; };
-		50191F9A1A43907700548963 /* LBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDataManager.h; sourceTree = "<group>"; };
-		50191F9B1A43907700548963 /* LBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDataManager.m; sourceTree = "<group>"; };
-		50191F9C1A43907700548963 /* LBJsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBJsonData.h; sourceTree = "<group>"; };
-		50191F9D1A43907700548963 /* LBJsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBJsonData.m; sourceTree = "<group>"; };
-		50191F9E1A43907700548963 /* LBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLocationManager.h; sourceTree = "<group>"; };
-		50191F9F1A43907700548963 /* LBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLocationManager.m; sourceTree = "<group>"; };
-		50191FA01A43907700548963 /* LBPlayerSummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBPlayerSummaryView.h; sourceTree = "<group>"; };
-		50191FA11A43907700548963 /* LBPlayerSummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBPlayerSummaryView.m; sourceTree = "<group>"; };
-		50191FA21A43907700548963 /* LBRestFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBRestFacade.h; sourceTree = "<group>"; };
-		50191FA31A43907700548963 /* LBRestFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBRestFacade.m; sourceTree = "<group>"; };
-		50191FA51A43907700548963 /* LBGolfShotProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBGolfShotProfiler.h; sourceTree = "<group>"; };
-		50191FA61A43907700548963 /* LBGolfShotProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBGolfShotProfiler.m; sourceTree = "<group>"; };
-		50191FA71A43907700548963 /* LBScorecardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBScorecardUtils.h; sourceTree = "<group>"; };
-		50191FA81A43907700548963 /* LBScorecardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBScorecardUtils.m; sourceTree = "<group>"; };
-		50191FA91A43907700548963 /* UIColor+lbColours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+lbColours.h"; sourceTree = "<group>"; };
-		50191FAA1A43907700548963 /* UIColor+lbColours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+lbColours.m"; sourceTree = "<group>"; };
 		50191FAC1A43907700548963 /* LBGolferSelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBGolferSelectVC.h; sourceTree = "<group>"; };
 		50191FAD1A43907700548963 /* LBGolferSelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBGolferSelectVC.m; sourceTree = "<group>"; };
 		50191FAE1A43907700548963 /* LBLandingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLandingVC.h; sourceTree = "<group>"; };
@@ -113,6 +107,13 @@
 		50191FBE1A43907700548963 /* LBStartRoundDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBStartRoundDetailVC.h; sourceTree = "<group>"; };
 		50191FBF1A43907700548963 /* LBStartRoundDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBStartRoundDetailVC.m; sourceTree = "<group>"; };
 		506A63F81A439A5600D4833D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ldrbrd-iphone-v3/Base.lproj/iPhone.storyboard"; sourceTree = "<group>"; };
+		506A63FF1A443DD000D4833D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		506A64141A443FE400D4833D /* LBCourseDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBCourseDescription.h; path = view/LBCourseDescription.h; sourceTree = "<group>"; };
+		506A64151A443FE400D4833D /* LBCourseDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBCourseDescription.m; path = view/LBCourseDescription.m; sourceTree = "<group>"; };
+		506A64161A443FE400D4833D /* LBPlayerSummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBPlayerSummaryView.h; path = view/LBPlayerSummaryView.h; sourceTree = "<group>"; };
+		506A64171A443FE400D4833D /* LBPlayerSummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBPlayerSummaryView.m; path = view/LBPlayerSummaryView.m; sourceTree = "<group>"; };
+		506A64491A4441BB00D4833D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ldrbrdios.xcodeproj; path = ../ldrbrdios/ldrbrdios.xcodeproj; sourceTree = "<group>"; };
 		58FDF9E883066621FFF6623B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F87858D62484A5952F20294 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BB859BCE4E4AFF2707ABD02F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72FFCC074B420F23463A3D9 /* libPods.a in Frameworks */,
+				506A64121A443E9200D4833D /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +164,6 @@
 				50191F8B1A43907700548963 /* classes */,
 				50191F661A43842A00548963 /* AppDelegate.h */,
 				50191F671A43842A00548963 /* AppDelegate.m */,
-				50191F6F1A43842A00548963 /* Main.storyboard */,
 				506A63F71A439A5600D4833D /* iPhone.storyboard */,
 				50191F721A43842A00548963 /* Images.xcassets */,
 				50191F741A43842A00548963 /* LaunchScreen.xib */,
@@ -201,54 +201,10 @@
 		50191F8B1A43907700548963 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				50191F8C1A43907700548963 /* domain */,
-				50191F971A43907700548963 /* LBConstant.h */,
-				50191F981A43907700548963 /* LBCourseDescription.h */,
-				50191F991A43907700548963 /* LBCourseDescription.m */,
-				50191F9A1A43907700548963 /* LBDataManager.h */,
-				50191F9B1A43907700548963 /* LBDataManager.m */,
-				50191F9C1A43907700548963 /* LBJsonData.h */,
-				50191F9D1A43907700548963 /* LBJsonData.m */,
-				50191F9E1A43907700548963 /* LBLocationManager.h */,
-				50191F9F1A43907700548963 /* LBLocationManager.m */,
-				50191FA01A43907700548963 /* LBPlayerSummaryView.h */,
-				50191FA11A43907700548963 /* LBPlayerSummaryView.m */,
-				50191FA21A43907700548963 /* LBRestFacade.h */,
-				50191FA31A43907700548963 /* LBRestFacade.m */,
-				50191FA41A43907700548963 /* utils */,
+				506A64131A443F7500D4833D /* view */,
 				50191FAB1A43907700548963 /* vc */,
 			);
 			path = classes;
-			sourceTree = "<group>";
-		};
-		50191F8C1A43907700548963 /* domain */ = {
-			isa = PBXGroup;
-			children = (
-				50191F8D1A43907700548963 /* LBCourse.h */,
-				50191F8E1A43907700548963 /* LBCourse.m */,
-				50191F8F1A43907700548963 /* LBCourseHole.h */,
-				50191F901A43907700548963 /* LBCourseHole.m */,
-				50191F911A43907700548963 /* LBDummyData.h */,
-				50191F921A43907700548963 /* LBDummyData.m */,
-				50191F931A43907700548963 /* LBGolfer.h */,
-				50191F941A43907700548963 /* LBGolfer.m */,
-				50191F951A43907700548963 /* LBScorecard.h */,
-				50191F961A43907700548963 /* LBScorecard.m */,
-			);
-			path = domain;
-			sourceTree = "<group>";
-		};
-		50191FA41A43907700548963 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				50191FA51A43907700548963 /* LBGolfShotProfiler.h */,
-				50191FA61A43907700548963 /* LBGolfShotProfiler.m */,
-				50191FA71A43907700548963 /* LBScorecardUtils.h */,
-				50191FA81A43907700548963 /* LBScorecardUtils.m */,
-				50191FA91A43907700548963 /* UIColor+lbColours.h */,
-				50191FAA1A43907700548963 /* UIColor+lbColours.m */,
-			);
-			path = utils;
 			sourceTree = "<group>";
 		};
 		50191FAB1A43907700548963 /* vc */ = {
@@ -278,6 +234,26 @@
 			path = vc;
 			sourceTree = "<group>";
 		};
+		506A64131A443F7500D4833D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				506A64141A443FE400D4833D /* LBCourseDescription.h */,
+				506A64151A443FE400D4833D /* LBCourseDescription.m */,
+				506A64161A443FE400D4833D /* LBPlayerSummaryView.h */,
+				506A64171A443FE400D4833D /* LBPlayerSummaryView.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		506A65E81A44879F00D4833D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506A65ED1A44879F00D4833D /* ldrbrdios.framework */,
+				506A65EF1A44879F00D4833D /* ldrbrdiosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		72A90C9417BCA303621C5FB7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,7 +266,10 @@
 		9379D932ED82C62ADF27A432 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */,
+				506A64491A4441BB00D4833D /* UIKit.framework */,
 				58FDF9E883066621FFF6623B /* libPods.a */,
+				506A63FF1A443DD000D4833D /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -307,6 +286,8 @@
 				50191F5C1A43842A00548963 /* Frameworks */,
 				50191F5D1A43842A00548963 /* Resources */,
 				2B67A1A95679E39D53A72F8C /* Copy Pods Resources */,
+				506A64111A443DD000D4833D /* Embed App Extensions */,
+				506A64451A44411D00D4833D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,6 +346,12 @@
 			mainGroup = 50191F561A43842A00548963;
 			productRefGroup = 50191F601A43842A00548963 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 506A65E81A44879F00D4833D /* Products */;
+					ProjectRef = 506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				50191F5E1A43842A00548963 /* ldrbrd-iphone-v3 */,
@@ -373,12 +360,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		506A65ED1A44879F00D4833D /* ldrbrdios.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ldrbrdios.framework;
+			remoteRef = 506A65EC1A44879F00D4833D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		506A65EF1A44879F00D4833D /* ldrbrdiosTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ldrbrdiosTests.xctest;
+			remoteRef = 506A65EE1A44879F00D4833D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		50191F5D1A43842A00548963 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50191F711A43842A00548963 /* Main.storyboard in Resources */,
 				50191F761A43842A00548963 /* LaunchScreen.xib in Resources */,
 				50191F731A43842A00548963 /* Images.xcassets in Resources */,
 				506A63F91A439A5600D4833D /* iPhone.storyboard in Resources */,
@@ -433,31 +436,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				50191FD31A43907700548963 /* LBPlayGolfVC.m in Sources */,
-				50191FC31A43907700548963 /* LBGolfer.m in Sources */,
-				50191FC71A43907700548963 /* LBJsonData.m in Sources */,
+				506A64191A443FE400D4833D /* LBPlayerSummaryView.m in Sources */,
 				50191FCF1A43907700548963 /* LBLandingVC.m in Sources */,
-				50191FC61A43907700548963 /* LBDataManager.m in Sources */,
-				50191FC11A43907700548963 /* LBCourseHole.m in Sources */,
-				50191FC91A43907700548963 /* LBPlayerSummaryView.m in Sources */,
+				506A64181A443FE400D4833D /* LBCourseDescription.m in Sources */,
 				50191F681A43842A00548963 /* AppDelegate.m in Sources */,
 				50191FD41A43907700548963 /* LBRoundSummaryVC.m in Sources */,
-				50191FCA1A43907700548963 /* LBRestFacade.m in Sources */,
-				50191FC81A43907700548963 /* LBLocationManager.m in Sources */,
 				50191FCE1A43907700548963 /* LBGolferSelectVC.m in Sources */,
-				50191FCB1A43907700548963 /* LBGolfShotProfiler.m in Sources */,
 				50191FD01A43907700548963 /* lbMainVC.m in Sources */,
 				50191FD61A43907700548963 /* LBStartRoundCourseVC.m in Sources */,
-				50191FC51A43907700548963 /* LBCourseDescription.m in Sources */,
-				50191FC01A43907700548963 /* LBCourse.m in Sources */,
 				50191FD21A43907700548963 /* LBPlayGolfNowVC.m in Sources */,
-				50191FCD1A43907700548963 /* UIColor+lbColours.m in Sources */,
-				50191FC41A43907700548963 /* LBScorecard.m in Sources */,
 				50191F651A43842A00548963 /* main.m in Sources */,
 				50191FD51A43907700548963 /* LBSignScorecardVC.m in Sources */,
 				50191FD11A43907700548963 /* lbMenuVC.m in Sources */,
 				50191FD71A43907700548963 /* LBStartRoundDetailVC.m in Sources */,
-				50191FC21A43907700548963 /* LBDummyData.m in Sources */,
-				50191FCC1A43907700548963 /* LBScorecardUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,14 +471,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		50191F6F1A43842A00548963 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				50191F701A43842A00548963 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		50191F741A43842A00548963 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -594,8 +577,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ldrbrd-ios/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -606,8 +594,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ldrbrd-ios/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -34,6 +34,20 @@
                ReferencedContainer = "container:ldrbrd-iphone-v3.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "506A64331A44411D00D4833D"
+               BuildableName = "ldrbrd-ios-frameworkTests.xctest"
+               BlueprintName = "ldrbrd-ios-frameworkTests"
+               ReferencedContainer = "container:ldrbrd-iphone-v3.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "50191F7A1A43842A00548963"
                BuildableName = "ldrbrd-iphone-v3Tests.xctest"
                BlueprintName = "ldrbrd-iphone-v3Tests"
+               ReferencedContainer = "container:ldrbrd-iphone-v3.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "506A64331A44411D00D4833D"
+               BuildableName = "ldrbrd-ios-frameworkTests.xctest"
+               BlueprintName = "ldrbrd-ios-frameworkTests"
                ReferencedContainer = "container:ldrbrd-iphone-v3.xcodeproj">
             </BuildableReference>
          </TestableReference>

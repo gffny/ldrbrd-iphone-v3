@@ -8,7 +8,6 @@
 
 #import "LBMainVC.h"
 #import "LBPlayGolfVC.h"
-#import "LBJsonData.h"
 
 @interface LBMainVC ()
 

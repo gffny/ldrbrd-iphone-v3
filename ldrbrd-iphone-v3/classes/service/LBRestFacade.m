@@ -7,8 +7,8 @@
 //
 
 #import "LBRestFacade.h"
+#import "LBConstant.h"'
 #import "LBDataManager.h"
-#import "LBConstant.h"
 #import "LBGolfer.h"
 #import "LBCourse.h"
 #import "LBScorecard.h"
