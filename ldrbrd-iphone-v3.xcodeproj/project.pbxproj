@@ -22,10 +22,27 @@
 		50191FD51A43907700548963 /* LBSignScorecardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FBB1A43907700548963 /* LBSignScorecardVC.m */; };
 		50191FD61A43907700548963 /* LBStartRoundCourseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FBD1A43907700548963 /* LBStartRoundCourseVC.m */; };
 		50191FD71A43907700548963 /* LBStartRoundDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50191FBF1A43907700548963 /* LBStartRoundDetailVC.m */; };
+		502A9B8B1A45E990008695F4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 502A9B8A1A45E990008695F4 /* Settings.bundle */; };
+		502A9B8D1A465FFB008695F4 /* LBCompetitionRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A9B8C1A465FFB008695F4 /* LBCompetitionRound.m */; };
+		502A9B931A4B2906008695F4 /* LBCompetitionRoundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 502A9B921A4B2906008695F4 /* LBCompetitionRoundView.m */; };
 		506A63F91A439A5600D4833D /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506A63F71A439A5600D4833D /* iPhone.storyboard */; };
 		506A64121A443E9200D4833D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A63FF1A443DD000D4833D /* NotificationCenter.framework */; };
 		506A64181A443FE400D4833D /* LBCourseDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A64151A443FE400D4833D /* LBCourseDescription.m */; };
 		506A64191A443FE400D4833D /* LBPlayerSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A64171A443FE400D4833D /* LBPlayerSummaryView.m */; };
+		506A661E1A449C3800D4833D /* LBCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66081A449C3800D4833D /* LBCourse.m */; };
+		506A661F1A449C3800D4833D /* LBCourseHole.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A660A1A449C3800D4833D /* LBCourseHole.m */; };
+		506A66201A449C3800D4833D /* LBGolfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A660C1A449C3800D4833D /* LBGolfer.m */; };
+		506A66211A449C3800D4833D /* LBScorecard.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A660E1A449C3800D4833D /* LBScorecard.m */; };
+		506A66221A449C3800D4833D /* LBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66111A449C3800D4833D /* LBDataManager.m */; };
+		506A66231A449C3800D4833D /* LBLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66131A449C3800D4833D /* LBLocationManager.m */; };
+		506A66241A449C3800D4833D /* LBRestFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66151A449C3800D4833D /* LBRestFacade.m */; };
+		506A66251A449C3800D4833D /* LBGolfShotProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66191A449C3800D4833D /* LBGolfShotProfiler.m */; };
+		506A66261A449C3800D4833D /* LBScorecardUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A661B1A449C3800D4833D /* LBScorecardUtils.m */; };
+		506A66271A449C3800D4833D /* UIColor+lbColours.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A661D1A449C3800D4833D /* UIColor+lbColours.m */; };
+		506A66321A44CB2C00D4833D /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506A63FF1A443DD000D4833D /* NotificationCenter.framework */; };
+		506A66381A44CB2C00D4833D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66371A44CB2C00D4833D /* TodayViewController.m */; };
+		506A663A1A44CB2C00D4833D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506A66391A44CB2C00D4833D /* MainInterface.storyboard */; };
+		506A663D1A44CB2C00D4833D /* ldrbrd-widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 506A66311A44CB2B00D4833D /* ldrbrd-widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +53,19 @@
 			remoteGlobalIDString = 50191F5E1A43842A00548963;
 			remoteInfo = "ldrbrd-iphone-v3";
 		};
-		506A65EC1A44879F00D4833D /* PBXContainerItemProxy */ = {
+		506A663B1A44CB2C00D4833D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 506A65901A4474C000D4833D;
-			remoteInfo = ldrbrdios;
+			containerPortal = 50191F571A43842A00548963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506A66301A44CB2B00D4833D;
+			remoteInfo = "ldrbrd-widget";
 		};
-		506A65EE1A44879F00D4833D /* PBXContainerItemProxy */ = {
+		506A663E1A44CB2C00D4833D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 506A659B1A4474C000D4833D;
-			remoteInfo = ldrbrdiosTests;
+			containerPortal = 50191F571A43842A00548963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506A66301A44CB2B00D4833D;
+			remoteInfo = "ldrbrd-widget";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,6 +76,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				506A663D1A44CB2C00D4833D /* ldrbrd-widget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +124,11 @@
 		50191FBD1A43907700548963 /* LBStartRoundCourseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBStartRoundCourseVC.m; sourceTree = "<group>"; };
 		50191FBE1A43907700548963 /* LBStartRoundDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBStartRoundDetailVC.h; sourceTree = "<group>"; };
 		50191FBF1A43907700548963 /* LBStartRoundDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBStartRoundDetailVC.m; sourceTree = "<group>"; };
+		502A9B8A1A45E990008695F4 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		502A9B8C1A465FFB008695F4 /* LBCompetitionRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCompetitionRound.m; sourceTree = "<group>"; };
+		502A9B8E1A466033008695F4 /* LBCompetitionRound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBCompetitionRound.h; sourceTree = "<group>"; };
+		502A9B911A4B2906008695F4 /* LBCompetitionRoundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBCompetitionRoundView.h; path = view/LBCompetitionRoundView.h; sourceTree = "<group>"; };
+		502A9B921A4B2906008695F4 /* LBCompetitionRoundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBCompetitionRoundView.m; path = view/LBCompetitionRoundView.m; sourceTree = "<group>"; };
 		506A63F81A439A5600D4833D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "ldrbrd-iphone-v3/Base.lproj/iPhone.storyboard"; sourceTree = "<group>"; };
 		506A63FF1A443DD000D4833D /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		506A64141A443FE400D4833D /* LBCourseDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBCourseDescription.h; path = view/LBCourseDescription.h; sourceTree = "<group>"; };
@@ -113,7 +136,34 @@
 		506A64161A443FE400D4833D /* LBPlayerSummaryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBPlayerSummaryView.h; path = view/LBPlayerSummaryView.h; sourceTree = "<group>"; };
 		506A64171A443FE400D4833D /* LBPlayerSummaryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBPlayerSummaryView.m; path = view/LBPlayerSummaryView.m; sourceTree = "<group>"; };
 		506A64491A4441BB00D4833D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ldrbrdios.xcodeproj; path = ../ldrbrdios/ldrbrdios.xcodeproj; sourceTree = "<group>"; };
+		506A66071A449C3800D4833D /* LBCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCourse.h; sourceTree = "<group>"; };
+		506A66081A449C3800D4833D /* LBCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCourse.m; sourceTree = "<group>"; };
+		506A66091A449C3800D4833D /* LBCourseHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBCourseHole.h; sourceTree = "<group>"; };
+		506A660A1A449C3800D4833D /* LBCourseHole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBCourseHole.m; sourceTree = "<group>"; };
+		506A660B1A449C3800D4833D /* LBGolfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBGolfer.h; sourceTree = "<group>"; };
+		506A660C1A449C3800D4833D /* LBGolfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBGolfer.m; sourceTree = "<group>"; };
+		506A660D1A449C3800D4833D /* LBScorecard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBScorecard.h; sourceTree = "<group>"; };
+		506A660E1A449C3800D4833D /* LBScorecard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBScorecard.m; sourceTree = "<group>"; };
+		506A66101A449C3800D4833D /* LBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDataManager.h; sourceTree = "<group>"; };
+		506A66111A449C3800D4833D /* LBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDataManager.m; sourceTree = "<group>"; };
+		506A66121A449C3800D4833D /* LBLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBLocationManager.h; sourceTree = "<group>"; };
+		506A66131A449C3800D4833D /* LBLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBLocationManager.m; sourceTree = "<group>"; };
+		506A66141A449C3800D4833D /* LBRestFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBRestFacade.h; sourceTree = "<group>"; };
+		506A66151A449C3800D4833D /* LBRestFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBRestFacade.m; sourceTree = "<group>"; };
+		506A66171A449C3800D4833D /* LBConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBConstant.h; sourceTree = "<group>"; };
+		506A66181A449C3800D4833D /* LBGolfShotProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBGolfShotProfiler.h; sourceTree = "<group>"; };
+		506A66191A449C3800D4833D /* LBGolfShotProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBGolfShotProfiler.m; sourceTree = "<group>"; };
+		506A661A1A449C3800D4833D /* LBScorecardUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBScorecardUtils.h; sourceTree = "<group>"; };
+		506A661B1A449C3800D4833D /* LBScorecardUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBScorecardUtils.m; sourceTree = "<group>"; };
+		506A661C1A449C3800D4833D /* UIColor+lbColours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+lbColours.h"; sourceTree = "<group>"; };
+		506A661D1A449C3800D4833D /* UIColor+lbColours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+lbColours.m"; sourceTree = "<group>"; };
+		506A66311A44CB2B00D4833D /* ldrbrd-widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ldrbrd-widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506A66351A44CB2C00D4833D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506A66361A44CB2C00D4833D /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		506A66371A44CB2C00D4833D /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		506A66391A44CB2C00D4833D /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		50B4E5611A4B94D2008F65AE /* ldrbrd-iphone-v3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ldrbrd-iphone-v3.entitlements"; sourceTree = "<group>"; };
+		50B4E5621A4B957B008F65AE /* ldrbrd-widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ldrbrd-widget.entitlements"; sourceTree = "<group>"; };
 		58FDF9E883066621FFF6623B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F87858D62484A5952F20294 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BB859BCE4E4AFF2707ABD02F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,14 +185,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		506A662E1A44CB2B00D4833D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506A66321A44CB2C00D4833D /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		50191F561A43842A00548963 = {
 			isa = PBXGroup;
 			children = (
+				502A9B8A1A45E990008695F4 /* Settings.bundle */,
 				50191F611A43842A00548963 /* ldrbrd-iphone-v3 */,
 				50191F7E1A43842B00548963 /* ldrbrd-iphone-v3Tests */,
+				506A66331A44CB2C00D4833D /* ldrbrd-widget */,
 				50191F601A43842A00548963 /* Products */,
 				72A90C9417BCA303621C5FB7 /* Pods */,
 				9379D932ED82C62ADF27A432 /* Frameworks */,
@@ -154,6 +214,7 @@
 			children = (
 				50191F5F1A43842A00548963 /* ldrbrd-iphone-v3.app */,
 				50191F7B1A43842A00548963 /* ldrbrd-iphone-v3Tests.xctest */,
+				506A66311A44CB2B00D4833D /* ldrbrd-widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +222,7 @@
 		50191F611A43842A00548963 /* ldrbrd-iphone-v3 */ = {
 			isa = PBXGroup;
 			children = (
+				50B4E5611A4B94D2008F65AE /* ldrbrd-iphone-v3.entitlements */,
 				50191F8B1A43907700548963 /* classes */,
 				50191F661A43842A00548963 /* AppDelegate.h */,
 				50191F671A43842A00548963 /* AppDelegate.m */,
@@ -201,6 +263,9 @@
 		50191F8B1A43907700548963 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				506A66061A449C3800D4833D /* domain */,
+				506A660F1A449C3800D4833D /* service */,
+				506A66161A449C3800D4833D /* utils */,
 				506A64131A443F7500D4833D /* view */,
 				50191FAB1A43907700548963 /* vc */,
 			);
@@ -237,6 +302,8 @@
 		506A64131A443F7500D4833D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				502A9B911A4B2906008695F4 /* LBCompetitionRoundView.h */,
+				502A9B921A4B2906008695F4 /* LBCompetitionRoundView.m */,
 				506A64141A443FE400D4833D /* LBCourseDescription.h */,
 				506A64151A443FE400D4833D /* LBCourseDescription.m */,
 				506A64161A443FE400D4833D /* LBPlayerSummaryView.h */,
@@ -245,13 +312,68 @@
 			name = view;
 			sourceTree = "<group>";
 		};
-		506A65E81A44879F00D4833D /* Products */ = {
+		506A66061A449C3800D4833D /* domain */ = {
 			isa = PBXGroup;
 			children = (
-				506A65ED1A44879F00D4833D /* ldrbrdios.framework */,
-				506A65EF1A44879F00D4833D /* ldrbrdiosTests.xctest */,
+				506A66071A449C3800D4833D /* LBCourse.h */,
+				506A66081A449C3800D4833D /* LBCourse.m */,
+				506A66091A449C3800D4833D /* LBCourseHole.h */,
+				506A660A1A449C3800D4833D /* LBCourseHole.m */,
+				506A660B1A449C3800D4833D /* LBGolfer.h */,
+				506A660C1A449C3800D4833D /* LBGolfer.m */,
+				506A660D1A449C3800D4833D /* LBScorecard.h */,
+				506A660E1A449C3800D4833D /* LBScorecard.m */,
+				502A9B8E1A466033008695F4 /* LBCompetitionRound.h */,
+				502A9B8C1A465FFB008695F4 /* LBCompetitionRound.m */,
 			);
-			name = Products;
+			path = domain;
+			sourceTree = "<group>";
+		};
+		506A660F1A449C3800D4833D /* service */ = {
+			isa = PBXGroup;
+			children = (
+				506A66101A449C3800D4833D /* LBDataManager.h */,
+				506A66111A449C3800D4833D /* LBDataManager.m */,
+				506A66121A449C3800D4833D /* LBLocationManager.h */,
+				506A66131A449C3800D4833D /* LBLocationManager.m */,
+				506A66141A449C3800D4833D /* LBRestFacade.h */,
+				506A66151A449C3800D4833D /* LBRestFacade.m */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		506A66161A449C3800D4833D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				506A66171A449C3800D4833D /* LBConstant.h */,
+				506A66181A449C3800D4833D /* LBGolfShotProfiler.h */,
+				506A66191A449C3800D4833D /* LBGolfShotProfiler.m */,
+				506A661A1A449C3800D4833D /* LBScorecardUtils.h */,
+				506A661B1A449C3800D4833D /* LBScorecardUtils.m */,
+				506A661C1A449C3800D4833D /* UIColor+lbColours.h */,
+				506A661D1A449C3800D4833D /* UIColor+lbColours.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		506A66331A44CB2C00D4833D /* ldrbrd-widget */ = {
+			isa = PBXGroup;
+			children = (
+				50B4E5621A4B957B008F65AE /* ldrbrd-widget.entitlements */,
+				506A66361A44CB2C00D4833D /* TodayViewController.h */,
+				506A66371A44CB2C00D4833D /* TodayViewController.m */,
+				506A66391A44CB2C00D4833D /* MainInterface.storyboard */,
+				506A66341A44CB2C00D4833D /* Supporting Files */,
+			);
+			path = "ldrbrd-widget";
+			sourceTree = "<group>";
+		};
+		506A66341A44CB2C00D4833D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506A66351A44CB2C00D4833D /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		72A90C9417BCA303621C5FB7 /* Pods */ = {
@@ -266,7 +388,6 @@
 		9379D932ED82C62ADF27A432 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */,
 				506A64491A4441BB00D4833D /* UIKit.framework */,
 				58FDF9E883066621FFF6623B /* libPods.a */,
 				506A63FF1A443DD000D4833D /* NotificationCenter.framework */,
@@ -292,6 +413,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				506A663C1A44CB2C00D4833D /* PBXTargetDependency */,
+				506A663F1A44CB2C00D4833D /* PBXTargetDependency */,
 			);
 			name = "ldrbrd-iphone-v3";
 			productName = "ldrbrd-iphone-v3";
@@ -316,6 +439,23 @@
 			productReference = 50191F7B1A43842A00548963 /* ldrbrd-iphone-v3Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		506A66301A44CB2B00D4833D /* ldrbrd-widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 506A66441A44CB2C00D4833D /* Build configuration list for PBXNativeTarget "ldrbrd-widget" */;
+			buildPhases = (
+				506A662D1A44CB2B00D4833D /* Sources */,
+				506A662E1A44CB2B00D4833D /* Frameworks */,
+				506A662F1A44CB2B00D4833D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ldrbrd-widget";
+			productName = "ldrbrd-widget";
+			productReference = 506A66311A44CB2B00D4833D /* ldrbrd-widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -328,10 +468,24 @@
 					50191F5E1A43842A00548963 = {
 						CreatedOnToolsVersion = 6.0.1;
 						DevelopmentTeam = 3TX4QPVVHD;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					50191F7A1A43842A00548963 = {
 						CreatedOnToolsVersion = 6.0.1;
 						TestTargetID = 50191F5E1A43842A00548963;
+					};
+					506A66301A44CB2B00D4833D = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 3TX4QPVVHD;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -346,42 +500,21 @@
 			mainGroup = 50191F561A43842A00548963;
 			productRefGroup = 50191F601A43842A00548963 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 506A65E81A44879F00D4833D /* Products */;
-					ProjectRef = 506A65E71A44879F00D4833D /* ldrbrdios.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				50191F5E1A43842A00548963 /* ldrbrd-iphone-v3 */,
 				50191F7A1A43842A00548963 /* ldrbrd-iphone-v3Tests */,
+				506A66301A44CB2B00D4833D /* ldrbrd-widget */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		506A65ED1A44879F00D4833D /* ldrbrdios.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ldrbrdios.framework;
-			remoteRef = 506A65EC1A44879F00D4833D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		506A65EF1A44879F00D4833D /* ldrbrdiosTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ldrbrdiosTests.xctest;
-			remoteRef = 506A65EE1A44879F00D4833D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		50191F5D1A43842A00548963 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502A9B8B1A45E990008695F4 /* Settings.bundle in Resources */,
 				50191F761A43842A00548963 /* LaunchScreen.xib in Resources */,
 				50191F731A43842A00548963 /* Images.xcassets in Resources */,
 				506A63F91A439A5600D4833D /* iPhone.storyboard in Resources */,
@@ -392,6 +525,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		506A662F1A44CB2B00D4833D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506A663A1A44CB2C00D4833D /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,19 +576,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506A661F1A449C3800D4833D /* LBCourseHole.m in Sources */,
 				50191FD31A43907700548963 /* LBPlayGolfVC.m in Sources */,
 				506A64191A443FE400D4833D /* LBPlayerSummaryView.m in Sources */,
 				50191FCF1A43907700548963 /* LBLandingVC.m in Sources */,
 				506A64181A443FE400D4833D /* LBCourseDescription.m in Sources */,
+				502A9B931A4B2906008695F4 /* LBCompetitionRoundView.m in Sources */,
+				502A9B8D1A465FFB008695F4 /* LBCompetitionRound.m in Sources */,
 				50191F681A43842A00548963 /* AppDelegate.m in Sources */,
 				50191FD41A43907700548963 /* LBRoundSummaryVC.m in Sources */,
+				506A66201A449C3800D4833D /* LBGolfer.m in Sources */,
 				50191FCE1A43907700548963 /* LBGolferSelectVC.m in Sources */,
 				50191FD01A43907700548963 /* lbMainVC.m in Sources */,
+				506A66241A449C3800D4833D /* LBRestFacade.m in Sources */,
+				506A66211A449C3800D4833D /* LBScorecard.m in Sources */,
 				50191FD61A43907700548963 /* LBStartRoundCourseVC.m in Sources */,
+				506A66231A449C3800D4833D /* LBLocationManager.m in Sources */,
 				50191FD21A43907700548963 /* LBPlayGolfNowVC.m in Sources */,
+				506A66221A449C3800D4833D /* LBDataManager.m in Sources */,
+				506A661E1A449C3800D4833D /* LBCourse.m in Sources */,
+				506A66261A449C3800D4833D /* LBScorecardUtils.m in Sources */,
 				50191F651A43842A00548963 /* main.m in Sources */,
+				506A66271A449C3800D4833D /* UIColor+lbColours.m in Sources */,
 				50191FD51A43907700548963 /* LBSignScorecardVC.m in Sources */,
 				50191FD11A43907700548963 /* lbMenuVC.m in Sources */,
+				506A66251A449C3800D4833D /* LBGolfShotProfiler.m in Sources */,
 				50191FD71A43907700548963 /* LBStartRoundDetailVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +613,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		506A662D1A44CB2B00D4833D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506A66381A44CB2C00D4833D /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -467,6 +628,16 @@
 			isa = PBXTargetDependency;
 			target = 50191F5E1A43842A00548963 /* ldrbrd-iphone-v3 */;
 			targetProxy = 50191F7C1A43842B00548963 /* PBXContainerItemProxy */;
+		};
+		506A663C1A44CB2C00D4833D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506A66301A44CB2B00D4833D /* ldrbrd-widget */;
+			targetProxy = 506A663B1A44CB2C00D4833D /* PBXContainerItemProxy */;
+		};
+		506A663F1A44CB2C00D4833D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506A66301A44CB2B00D4833D /* ldrbrd-widget */;
+			targetProxy = 506A663E1A44CB2C00D4833D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -494,6 +665,7 @@
 		50191F831A43842B00548963 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_GROUP = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -526,6 +698,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -537,6 +710,7 @@
 		50191F841A43842B00548963 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_GROUP = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -563,6 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_GROUP = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -575,16 +750,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F87858D62484A5952F20294 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "ldrbrd-iphone-v3/ldrbrd-iphone-v3.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ldrbrd-ios/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -592,16 +772,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BB859BCE4E4AFF2707ABD02F /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "ldrbrd-iphone-v3/ldrbrd-iphone-v3.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ldrbrd-ios/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -639,6 +824,42 @@
 			};
 			name = Release;
 		};
+		506A66401A44CB2C00D4833D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "ldrbrd-widget/ldrbrd-widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ldrbrd-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		506A66411A44CB2C00D4833D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "ldrbrd-widget/ldrbrd-widget.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "ldrbrd-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -665,6 +886,15 @@
 			buildConfigurations = (
 				50191F891A43842B00548963 /* Debug */,
 				50191F8A1A43842B00548963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		506A66441A44CB2C00D4833D /* Build configuration list for PBXNativeTarget "ldrbrd-widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506A66401A44CB2C00D4833D /* Debug */,
+				506A66411A44CB2C00D4833D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

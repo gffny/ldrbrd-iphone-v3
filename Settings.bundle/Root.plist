@@ -5,24 +5,28 @@
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
+			<key>Title</key>
+			<string>Group</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>User Preferences</string>
 		</dict>
 		<dict>
-			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
-			<key>Title</key>
-			<string>Username</string>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>IsSecure</key>
+			<false/>
 			<key>Key</key>
 			<string>username</string>
-		</dict>
-		<dict>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
 			<key>Title</key>
-			<string>Score Updates</string>
+			<string>Name</string>
 			<key>Type</key>
-			<string>PSGroupSpecifier</string>
+			<string>Username</string>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>

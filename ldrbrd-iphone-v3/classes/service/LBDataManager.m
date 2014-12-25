@@ -113,4 +113,31 @@
     return array;
 }
 
+-(void) handleGolferDigest:(NSDictionary *)golferDigest {
+    //parse the json golfer profile digest response (profile, upcoming rounds (comp and non comp), existing scorecard, etc)
+    LBGolfer* golferProfile = [[LBGolfer alloc] initWithDictionary:(NSDictionary *)[golferDigest objectForKey:@"golfer"] error:nil];
+    [[LBDataManager sharedInstance] setGolferProfile:golferProfile];
+    
+    // parse golfer favourite course list
+    
+    NSArray<LBCourse>* favouriteCourseList = (NSArray<LBCourse>*)[LBCourse arrayOfModelsFromDictionaries:(NSArray*)[golferDigest objectForKey:@"favouriteCourseList"]];
+    [[LBDataManager sharedInstance] setFavouriteCourseList:favouriteCourseList];
+    
+    // parse upcoming competitions list
+    NSArray<LBCompetitionRound> *upcomingCompetitionRoundList = (NSArray<LBCompetitionRound>*)[LBCompetitionRound arrayOfModelsFromDictionaries:(NSArray*)[golferDigest objectForKey:@"upcomingCompetitionRoundList"]];
+    [[LBDataManager sharedInstance] setUpcomingCompetitionRoundList: upcomingCompetitionRoundList];
+    
+    // parse last x scorecards list
+    NSArray<LBScorecard> *lastXScorecardList = (NSArray<LBScorecard>*)[[NSArray alloc] initWithArray: (NSArray<LBScorecard>*)[golferDigest objectForKey:@"lastXScorecardList"]];
+    [[LBDataManager sharedInstance] setLastXScorecardList: lastXScorecardList];
+    
+    // parse upcoming non-competition-round list
+    NSArray *upcomingNonCompetitionRoundList = [[NSArray alloc] initWithArray: (NSArray*)[golferDigest objectForKey:@"upcomingNonCompetitionRoundList"]];
+    [[LBDataManager sharedInstance] setUpcomingNonCompetitionRoundList: upcomingNonCompetitionRoundList];
+    
+    // check if there's an active scorecard
+    LBScorecard *activeScorecard = [[LBScorecard alloc] initWithDictionary:[golferDigest objectForKey:@"activeScorecard"] error:nil];
+    [[LBDataManager sharedInstance] setScorecard: activeScorecard];
+}
+
 @end

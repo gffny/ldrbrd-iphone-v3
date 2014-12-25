@@ -8,6 +8,8 @@
 
 #import "LBMainVC.h"
 #import "LBPlayGolfVC.h"
+#import "LBRestFacade.h"
+#import "LBCompetitionRoundView.h"
 
 @interface LBMainVC ()
 
@@ -16,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *revealButtonItem;
 @property (strong, nonatomic) IBOutlet UIButton *playNowBtn;
 @property (strong, nonatomic) IBOutlet UIButton *scheduleRoundBtn;
+@property (strong, nonatomic) IBOutlet LBCompetitionRoundView *nextCompetitionRoundView;
 
 @end
 
@@ -24,26 +27,34 @@
 @synthesize upcomingRoundTable;
 @synthesize newsTable;
 
-- (void)playUpcomingRoundWithId:(NSString *)roundId
-{
-    //TODO get course, and competition data using the roundId
-    [self performSegueWithIdentifier:@"seg_plyrnd" sender:self];
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    if([[LBDataManager sharedInstance] firstLoad] == false) {
+        [LBRestFacade asynchRetrieveGolferDigestWithSuccess: ^(AFHTTPRequestOperation *operation, id responseObject) {
+            //parse the json golfer profile digest response (profile, upcoming rounds (comp and non comp), existing scorecard, etc)
+            [[LBDataManager sharedInstance] handleGolferDigest: (NSDictionary*)responseObject];
+            [self initialiseView];
+        } failure: nil];
+        //TODO handle failure
+    } else {
+        [[LBDataManager sharedInstance] setFirstLoad:false];
+        [self initialiseView];
+    }
+}
+
+- (void) initialiseView {
     [scroller setScrollEnabled:YES];
     [scroller setContentSize:CGSizeMake(320, 736)];
     [scroller setDelegate:self];
-
+    
     [self.upcomingRoundTable setDataSource:self];
     [self.upcomingRoundTable setDelegate:self];
     
     [self.newsTable setDataSource:self];
     [self.newsTable setDelegate:self];
-
+    
     [self.revealButtonItem setTarget: self.revealViewController];
     [self.revealButtonItem setAction: @selector( revealToggle: )];
     [self.navigationController.navigationBar addGestureRecognizer: self.revealViewController.panGestureRecognizer];
@@ -54,8 +65,42 @@
     } else {
         [self.playNowBtn addTarget:self action:@selector(playNowBtnClckd:) forControlEvents:UIControlEventTouchUpInside];
     }
+    if([[LBDataManager sharedInstance] upcomingCompetitionRoundList] != nil  && [[[LBDataManager sharedInstance] upcomingCompetitionRoundList] count] > 0) {
+        [self.nextCompetitionRoundView initialiseCompetitionRoundViewWithCompetition:(LBCompetitionRound *)[[[LBDataManager sharedInstance] upcomingCompetitionRoundList] objectAtIndex:0]];
+    } else {
+        [self.nextCompetitionRoundView initaliseEmptyCompetitionRoundView];
+    }
+    [self.nextCompetitionRoundView addNextRoundHandler:@selector(playUpcomingCompRound:) andTarget: self];
     [self.scheduleRoundBtn addTarget:self action:@selector(scheduleRoundBtnClckd:) forControlEvents:UIControlEventTouchUpInside];
+}
 
+- (void)playUpcomingRoundWithId:(NSString *)roundId
+{
+    //TODO get course, and competition data using the roundId
+    [self performSegueWithIdentifier:@"seg_plyrnd" sender:self];
+}
+
+- (void)playUpcomingCompRound: (UITapGestureRecognizer *) tapGestureRecogniser
+{
+    NSLog(@"playing next upcoming competition round");
+    if([[LBDataManager sharedInstance] scorecard])
+    {
+        //TODO make this into an ios alert and a cancel button
+        NSLog(@"this scorecard will be closed");
+        // cancel scorecard
+    }
+    // start scorecard,
+    [LBRestFacade asynchPlayNextUpcomingRound: [[[LBDataManager sharedInstance] upcomingCompetitionRoundList] objectAtIndex:0] withSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        // parse response object as scorecard
+        
+        [[LBDataManager sharedInstance] setScorecard: [[LBScorecard alloc] initWithDictionary: (NSDictionary *)responseObject error: nil]];
+        // TODO add error handling
+        NSLog(@"play now button clicked");
+        [self performSegueWithIdentifier:@"seg_ctnRnd" sender:self];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        
+        NSLog(@"start comp round failure");
+    }];
 }
 
 - (void)playNowBtnClckd:(UIButton *)sender
@@ -69,7 +114,6 @@
     NSLog(@"continue round button clicked");
     [self performSegueWithIdentifier:@"seg_ctnRnd" sender:self];
 }
-
 
 - (void)scheduleRoundBtnClckd:(UIButton *)sender
 {

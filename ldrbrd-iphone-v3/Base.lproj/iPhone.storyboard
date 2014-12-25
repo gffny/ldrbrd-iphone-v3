@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VEp-Pw-h7i">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="VEp-Pw-h7i">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--LandingVC-->
@@ -189,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="-1204" y="85"/>
         </scene>
-        <!--Start Round CourseVC - Favourite-->
+        <!--Favourite-->
         <scene sceneID="yCN-zE-shb">
             <objects>
                 <viewController id="11x-Dk-m8z" customClass="LBStartRoundCourseVC" sceneMemberID="viewController">
@@ -227,7 +227,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="7BD67211-CC97-4664-BB85-BECC75CAABF2" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="E24DFE44-B30B-4033-8915-3100BE995E01" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tXI-fR-Fpw">
@@ -266,7 +266,7 @@
             </objects>
             <point key="canvasLocation" x="651" y="-663"/>
         </scene>
-        <!--Tab Bar Controller - LEADERBOARD-->
+        <!--LEADERBOARD-->
         <scene sceneID="PvJ-5E-wsz">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="XyA-ka-76Q" sceneMemberID="viewController">
@@ -287,7 +287,7 @@
             </objects>
             <point key="canvasLocation" x="111" y="529"/>
         </scene>
-        <!--Start Round CourseVC - Search-->
+        <!--Search-->
         <scene sceneID="HHn-Pr-Bgk">
             <objects>
                 <viewController id="N3x-bH-oHj" customClass="LBStartRoundCourseVC" sceneMemberID="viewController">
@@ -325,7 +325,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="7BD67211-CC97-4664-BB85-BECC75CAABF2" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="E24DFE44-B30B-4033-8915-3100BE995E01" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aet-ZI-Ado">
@@ -372,7 +372,7 @@
             </objects>
             <point key="canvasLocation" x="651" y="53"/>
         </scene>
-        <!--Start Round DetailVC - LEADERBOARD-->
+        <!--LEADERBOARD-->
         <scene sceneID="tVj-q8-HPp">
             <objects>
                 <viewController id="4gE-Df-TlB" customClass="LBStartRoundDetailVC" sceneMemberID="viewController">
@@ -636,7 +636,7 @@
             </objects>
             <point key="canvasLocation" x="-1204" y="1095"/>
         </scene>
-        <!--MainVC - LEADERBOARD-->
+        <!--LEADERBOARD-->
         <scene sceneID="mWa-8H-uxJ">
             <objects>
                 <viewController id="r6F-x3-th8" customClass="LBMainVC" sceneMemberID="viewController">
@@ -802,7 +802,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="Zl0-pm-X3e">
+                                    <view contentMode="scaleToFill" id="Zl0-pm-X3e" customClass="LBCompetitionRoundView">
                                         <rect key="frame" x="0.0" y="113" width="320" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
@@ -813,20 +813,20 @@
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ButterBrook GC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43S-Cq-v6j">
-                                                <rect key="frame" x="15" y="29" width="123" height="21"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ButterBrook GC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="43S-Cq-v6j">
+                                                <rect key="frame" x="15" y="30" width="225" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-Competition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="No3-dG-xHo">
-                                                <rect key="frame" x="15" y="58" width="133" height="21"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-Competition" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="No3-dG-xHo">
+                                                <rect key="frame" x="15" y="60" width="135" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri 11/14/2014 12pm EST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Oj-0s-Z9C">
-                                                <rect key="frame" x="15" y="87" width="197" height="21"/>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri 11/14/2014 12pm EST" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Oj-0s-Z9C">
+                                                <rect key="frame" x="15" y="90" width="200" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
@@ -883,9 +883,9 @@
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="Afv-cq-5FN"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <size key="freeformSize" width="320" height="800"/>
                     <connections>
                         <outlet property="newsTable" destination="j9I-jR-hbK" id="6oa-fN-8v0"/>
+                        <outlet property="nextCompetitionRoundView" destination="Zl0-pm-X3e" id="png-KK-Zuy"/>
                         <outlet property="playNowBtn" destination="qe2-Fk-lbP" id="94B-io-UDT"/>
                         <outlet property="revealButtonItem" destination="Afv-cq-5FN" id="EsQ-7g-aIL"/>
                         <outlet property="scroller" destination="YQy-uM-E4b" id="lDv-lU-le7"/>
@@ -995,7 +995,7 @@
             </objects>
             <point key="canvasLocation" x="1803" y="1095"/>
         </scene>
-        <!--Golfer SelectVC - Friends-->
+        <!--Friends-->
         <scene sceneID="am5-tB-OuD">
             <objects>
                 <viewController id="95I-Ik-fX2" customClass="LBGolferSelectVC" sceneMemberID="viewController">
@@ -1068,12 +1068,12 @@
             </objects>
             <point key="canvasLocation" x="2349" y="-696"/>
         </scene>
-        <!--Tab Bar Controller - LEADERBOARD-->
+        <!--LEADERBOARD-->
         <scene sceneID="wob-dD-uox">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="Szm-9t-Qyk" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="LEADERBOARD" id="ucx-oO-MUx"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="7T6-Id-rKq">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -1089,7 +1089,7 @@
             </objects>
             <point key="canvasLocation" x="1803" y="-696"/>
         </scene>
-        <!--Golfer SelectVC - Society-->
+        <!--Society-->
         <scene sceneID="2Tf-5G-CXN">
             <objects>
                 <viewController id="Ybf-yh-vWN" customClass="LBGolferSelectVC" sceneMemberID="viewController">
@@ -1394,7 +1394,7 @@
             </objects>
             <point key="canvasLocation" x="2944" y="1095"/>
         </scene>
-        <!--Start Round CourseVC - Recent-->
+        <!--Recent-->
         <scene sceneID="bLw-qm-Y8D">
             <objects>
                 <viewController id="fGY-J7-0hP" customClass="LBStartRoundCourseVC" sceneMemberID="viewController">
@@ -1432,7 +1432,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="7BD67211-CC97-4664-BB85-BECC75CAABF2" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="E24DFE44-B30B-4033-8915-3100BE995E01" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Se5-Gu-dnO">
@@ -1496,7 +1496,7 @@
             </objects>
             <point key="canvasLocation" x="1803" y="1944"/>
         </scene>
-        <!--Golfer SelectVC - Recent-->
+        <!--Recent-->
         <scene sceneID="Wb8-qC-0zK">
             <objects>
                 <viewController id="6eQ-Dk-OC2" customClass="LBGolferSelectVC" sceneMemberID="viewController">
@@ -1571,12 +1571,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="7BD67211-CC97-4664-BB85-BECC75CAABF2" width="256" height="256">
+        <image name="E24DFE44-B30B-4033-8915-3100BE995E01" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
 c1dOU0NvbG9ygAKADRIgwAAAgAOAC1p7MjU2LCAyNTZ90hUKFhhaTlMub2JqZWN0c6EXgASACtIVChod
-ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAAQAyk1NACoABAAIdXiB
+ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAAQNHk1NACoABAAIdXiB
 /3Byef9wc33/b3F1/25wd/9wcnn/b3F1/2xudf9sbnX/bnB3/3Bzff9nanT/bnF7/3Byef9wc33/amxz
 /29xdf9zdXz/bG51/2ptd/9qbXf/bG51/2ptd/95e4H/dXd9/2xvef9sbnX/bG95/2xvef9nanT/am13
 /3N1fP9wc33/d3qD/2xudf9wc33/bG51/3V3ff9nanT/amxz/2xudf9qbHP/bG95/2ptd/9qbXf/bG95
@@ -5946,18 +5946,71 @@ ohscgAWABoAJEADSIAohIl8QFE5TVElGRlJlcHJlc2VudGF0aW9ugAeACE8SAAQAyk1NACoABAAIdXiB
 /2ptd/9wcnn/am13/2ptd/9maXP/bnF7/2xvef9sb3n/Z2p0/25xe/9kZ3H/bG95/25xe/9ucXv/YGNs
 /2dqdP9sb3n/am13/2ptd/9wc33/d3qD/2ptd/9qbXf/e32D/2xudf9sb3n/bnF7/2xvef9qbHP/dXd9
 /3V3ff9qbXf/c3V8/25wd/9wc33/bnB3/3Z4fP9ucXv/cHJ5/3Byef93eoP/bnF7/3Bzff9sb3n/cHN9
-/wANAQAAAwAAAAEBAAAAAQEAAwAAAAEBAAAAAQIAAwAAAAQABACqAQMAAwAAAAEAAQAAAQYAAwAAAAEA
-AgAAAREABAAAAAIABACyARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAgAAAARcABAAAAAIA
-BAC6ARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAQABADCAAAAAAAIAAgACAAIAAAACAACAAgA
-AgAAAAIAAAABAAEAAQAB0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCj
-KSorXxAQTlNCaXRtYXBJbWFnZVJlcFpOU0ltYWdlUmVwWE5TT2JqZWN00iUmLS5XTlNBcnJheaItK9Il
-JjAxXk5TTXV0YWJsZUFycmF5ozAtK9MzNAo1NjdXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzS
-JSY5OldOU0NvbG9yojkr0iUmPD1XTlNJbWFnZaI8K18QD05TS2V5ZWRBcmNoaXZlctFAQVRyb290gAEA
-AAAIAAAAEQAAABoAAAAjAAAALQAAADIAAAA3AAAARgAAAEwAAABXAAAAXgAAAGUAAAByAAAAeQAAAIEA
-AACDAAAAhQAAAIoAAACMAAAAjgAAAJkAAACeAAAAqQAAAKsAAACtAAAArwAAALQAAAC3AAAAuQAAALsA
-AAC9AAAAvwAAAMQAAADbAAAA3QAAAN8ABAGvAAQBtAAEAb8ABAHIAAQB2wAEAd8ABAHyAAQB/QAEAgYA
-BAILAAQCEwAEAhYABAIbAAQCKgAEAi4ABAI1AAQCPQAEAkoABAJPAAQCUQAEAlMABAJYAAQCYAAEAmMA
-BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
+/wAOAQAAAwAAAAEBAAAAAQEAAwAAAAEBAAAAAQIAAwAAAAQABAC2AQMAAwAAAAEAAQAAAQYAAwAAAAEA
+AgAAAREABAAAAAIABADGARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAAAAEAgAAAARcABAAAAAIA
+BAC+ARwAAwAAAAEAAQAAAVIAAwAAAAEAAQAAAVMAAwAAAAQABADOh3MABwAADEgABADWAAAAAAAIAAgA
+CAAIAAIAAAACAAAAAAAIAAIACAABAAEAAQABAAAMSExpbm8CEAAAbW50clJHQiBYWVogB84AAgAJAAYA
+MQAAYWNzcE1TRlQAAAAASUVDIHNSR0IAAAAAAAAAAAAAAAAAAPbWAAEAAAAA0y1IUCAgAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARY3BydAAAAVAAAAAzZGVzYwAAAYQA
+AABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAAAkAA
+AAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAAA/gA
+AAAUbWVhcwAABAwAAAAkdGVjaAAABDAAAAAMclRSQwAABDwAAAgMZ1RSQwAABDwAAAgMYlRSQwAABDwA
+AAgMdGV4dAAAAABDb3B5cmlnaHQgKGMpIDE5OTggSGV3bGV0dC1QYWNrYXJkIENvbXBhbnkAAGRlc2MA
+AAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAADzUQABAAAA
+ARbMWFlaIAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UA
+ABjaWFlaIAAAAAAAACSgAAAPhAAAts9kZXNjAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAA
+AAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIg
+c3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIgc3Bh
+Y2UgLSBzUkdCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALFJlZmVyZW5jZSBWaWV3aW5n
+IENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBDb25k
+aXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB2aWV3AAAAAAATpP4A
+FF8uABDPFAAD7cwABBMLAANcngAAAAFYWVogAAAAAABMCVYAUAAAAFcf521lYXMAAAAAAAAAAQAAAAAA
+AAAAAAAAAAAAAAAAAAKPAAAAAnNpZyAAAAAAQ1JUIGN1cnYAAAAAAAAEAAAAAAUACgAPABQAGQAeACMA
+KAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCkAKkArgCyALcA
+vADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcBDQETARkBHwElASsBMgE4AT4BRQFMAVIBWQFgAWcB
+bgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHRAdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4AkECSwJUAl0C
+ZwJxAnoChAKOApgCogKsArYCwQLLAtUC4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNyA34DigOWA6ID
+rgO6A8cD0wPgA+wD+QQGBBMEIAQtBDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUrBToF
+SQVYBWcFdwWGBZYFpgW1BcUF1QXlBfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0QbjBvUHBwcZBysH
+PQdPB2EHdAeGB5kHrAe/B9IH5Qf4CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJ
+jwmkCboJzwnlCfsKEQonCj0KVApqCoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoM
+QwxcDHUMjgynDMAM2QzzDQ0NJg1ADVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EP
+Xg96D5YPsw/PD+wQCRAmEEMQYRB+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS
+4xMDEyMTQxNjE4MTpBPFE+UUBhQnFEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW
+1hb6Fx0XQRdlF4kXrhfSF/cYGxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrsGxQb
+OxtjG4obshvaHAIcKhxSHHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kflB+/H+og
+FSBBIGwgmCDEIPAhHCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJJTgl
+aCWXJccl9yYnJlcmhya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1KmgqmyrPKwIr
+NitpK50r0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBsMKQw2zESMUox
+gjG6MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426TckN2A3nDfXOBQ4
+UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8hP2E/
+oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYiRmdGq0bwRzVH
+e0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5uTrdPAE9JT5NP
+3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW91dEV5JX4FgvWH1Y
+y1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzWXSddeF3JXhpebF69Xw9fYV+zYAVgV2CqYPxhT2GiYfVi
+SWKcYvBjQ2OXY+tkQGSUZOllPWWSZedmPWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqfavdrT2una/9s
+V2yvbQhtYG25bhJua27Ebx5veG/RcCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUodYV14XY+dpt2
++HdWd7N4EXhueMx5KnmJeed6RnqlewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2C
+MIKSgvSDV4O6hB2EgITjhUeFq4YOhnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN
+/45mjs6PNo+ekAaQbpDWkT+RqJIRknqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfya
+aJrVm0Kbr5wcnImc951kndKeQJ6unx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaLpv2n
+bqfgqFKoxKk3qamqHKqPqwKrdavprFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1
+E7WKtgG2ebbwt2i34LhZuNG5SrnCuju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48JfwtvD
+WMPUxFHEzsVLxcjGRsbDx0HHv8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7S
+P9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UTh
+zOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx
+//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//0iUmJyhaJGNs
+YXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCjKSorXxAQTlNCaXRtYXBJbWFnZVJlcFpO
+U0ltYWdlUmVwWE5TT2JqZWN00iUmLS5XTlNBcnJheaItK9IlJjAxXk5TTXV0YWJsZUFycmF5ozAtK9Mz
+NAo1NjdXTlNXaGl0ZVxOU0NvbG9yU3BhY2VEMCAwABADgAzSJSY5OldOU0NvbG9yojkr0iUmPD1XTlNJ
+bWFnZaI8K18QD05TS2V5ZWRBcmNoaXZlctFAQVRyb290gAEAAAAIAAAAEQAAABoAAAAjAAAALQAAADIA
+AAA3AAAARgAAAEwAAABXAAAAXgAAAGUAAAByAAAAeQAAAIEAAACDAAAAhQAAAIoAAACMAAAAjgAAAJkA
+AACeAAAAqQAAAKsAAACtAAAArwAAALQAAAC3AAAAuQAAALsAAAC9AAAAvwAAAMQAAADbAAAA3QAAAN8A
+BA4DAAQOCAAEDhMABA4cAAQOLwAEDjMABA5GAAQOUQAEDloABA5fAAQOZwAEDmoABA5vAAQOfgAEDoIA
+BA6JAAQOkQAEDp4ABA6jAAQOpQAEDqcABA6sAAQOtAAEDrcABA68AAQOxAAEDscABA7ZAAQO3AAEDuEA
+AAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQO4w
 </mutableData>
         </image>
         <image name="menu.png" width="28" height="20"/>
@@ -5968,8 +6021,8 @@ BAJoAAQCcAAEAnMABAKFAAQCiAAEAo0AAAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQCjw
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="7zF-yp-W4p"/>
         <segue reference="Wpw-cM-yqD"/>
+        <segue reference="7zF-yp-W4p"/>
         <segue reference="Va6-Vr-VcI"/>
     </inferredMetricsTieBreakers>
 </document>

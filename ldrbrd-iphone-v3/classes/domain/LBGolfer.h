@@ -23,7 +23,7 @@
 @property (strong, nonatomic) NSString *profileHandle;// = gffny;
 @property (strong, nonatomic) NSString<Optional> *profileImageRef;// = "<null>";
 
-@property (assign, nonatomic) BOOL enabled;// = 1;
+@property (assign, nonatomic) NSString<Optional> *enabled;// = 1;
 @property (strong, nonatomic) NSString *failedLoginAttemptsCount;// = 0;
 @property (strong, nonatomic) NSArray<Ignore> *favouriteCourseList;// = "<null>";
 @property (strong, nonatomic) NSString<Ignore> *handDominanceValue;// = RIGHT;

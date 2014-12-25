@@ -8,6 +8,7 @@
 
 #import "LBStartRoundDetailVC.h"
 #import "LBGolferSelectVC.h"
+#import "LBRestFacade.h"
 
 @interface LBStartRoundDetailVC ()
 
@@ -114,8 +115,20 @@
 }
 
 - (void) startRoundClicked: (UIButton *)sender {
-    [self performSegueWithIdentifier:@"seg_plyrnd" sender:self];
-}
+    [LBRestFacade asynchStartScorecardOnCourse:[[[LBDataManager sharedInstance] course] idString] withSuccess:
+     ^(AFHTTPRequestOperation *operation, id responseObject) {
+         NSLog(@"starting scorecard");
+         
+         // parse scorecard and persist it
+        [[LBDataManager sharedInstance] setScorecard:[[LBScorecard alloc] initWithDictionary:(NSDictionary*)responseObject error:nil]];
+
+
+         [self performSegueWithIdentifier:@"seg_plyrnd" sender:self];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"failed to start scorecard!");
+        
+    }];
+     }
 
 #pragma mark - Navigation
 
@@ -126,8 +139,7 @@
     UIViewController *destVc = [segue destinationViewController];
     if([destVc isKindOfClass: [LBGolferSelectVC class]])
     {
-        LBGolferSelectVC *playGolfVC = (LBGolferSelectVC *)destVc;
-        
+        //LBGolferSelectVC *playGolfVC = (LBGolferSelectVC *)destVc;
     }
     // Pass the selected object to the new view controller.
 }

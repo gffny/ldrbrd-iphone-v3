@@ -13,6 +13,7 @@
 #import "LBScorecard.h"
 #import "LBCourse.h"
 #import "LBGolfer.h"
+#import "LBCompetitionRound.h"
 
 @interface LBDataManager : NSObject
 
@@ -32,8 +33,10 @@
 /* LIST INFO */
 @property (nonatomic, strong) NSArray<LBCourse> *favouriteCourseList;
 @property (nonatomic, strong) NSArray *upcomingNonCompetitionRoundList;
-@property (nonatomic, strong) NSArray *upcomingCompetitionEntryList;
+@property (nonatomic, strong) NSArray<LBCompetitionRound> *upcomingCompetitionRoundList;
 @property (nonatomic, strong) NSArray<LBScorecard> *lastXScorecardList;
+
+@property (nonatomic) BOOL firstLoad;
 
 
 /* SINGLETON FACTORY METHODS */
@@ -47,5 +50,7 @@
 
 -(BOOL) isInRound;
 -(NSInteger) getScoreForHole: (NSNumber *) holeNumber;
+
+-(void) handleGolferDigest: (NSDictionary *) golferDigest;
 
 @end

@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Leaderboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>ldrbrd-iphone-v3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
-		</dict>
-		<key>ldrbrd-iphone-widget.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -48,6 +48,16 @@
 			<true/>
 		</dict>
 		<key>506A65501A44727400D4833D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>506A65F31A44983700D4833D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>506A66301A44CB2B00D4833D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

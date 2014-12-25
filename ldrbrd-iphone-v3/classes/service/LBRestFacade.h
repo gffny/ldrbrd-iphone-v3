@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
+#import "LBCompetitionRound.h"
 
 @interface LBRestFacade : NSObject
 
@@ -24,5 +25,9 @@
 +(void) asynchSgnScorecard:(NSString *) scorecardId withSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 +(void) asynchRetrieveCourseListWithSuccess: (void (^)(AFHTTPRequestOperation *operation, id responseObject)) success AndFailure:(void (^)(AFHTTPRequestOperation *operation, id responseObject)) failure;
+
++(void) asynchRetrieveGolferDigestWithSuccess: (void (^) (AFHTTPRequestOperation *operation, id responseObject))success failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
+
++(void) asynchPlayNextUpcomingRound: (LBCompetitionRound *) competitionRound withSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure;
 
 @end

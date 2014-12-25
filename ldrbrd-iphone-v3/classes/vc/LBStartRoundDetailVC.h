@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LBCourseDescription.h"
 #import "LBPlayerSummaryView.h"
+#import "LBDataManager.h"
 
 @interface LBStartRoundDetailVC : UIViewController<UIScrollViewDelegate>
 

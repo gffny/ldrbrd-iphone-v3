@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import "SWRevealViewController.h"
+#import "LBGolfer.h"
+
 
 
 @interface LBGolferSelectVC : UIViewController

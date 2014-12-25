@@ -7,11 +7,12 @@
 //
 
 #import "LBRestFacade.h"
-#import "LBConstant.h"'
+#import "LBConstant.h"
 #import "LBDataManager.h"
 #import "LBGolfer.h"
 #import "LBCourse.h"
 #import "LBScorecard.h"
+#import "LBCompetitionRound.h"
 
 @implementation LBRestFacade
 
@@ -28,6 +29,7 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
     [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager setRequestSerializer: requestSerializer];
 
+    NSLog(@"%@", [NSString stringWithFormat: @"checking that %@health is online", restBaseURL]);
     [manager GET:[NSString stringWithFormat:@"%@health", restBaseURL] parameters:Nil success: success failure: failure];
 }
 
@@ -43,43 +45,12 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
     
     [manager POST:[NSString stringWithFormat:@"%@j_spring_security_check?j_username=%@&j_password=%@", localBaseURL, username, password] parameters:Nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         
-        // do post login, load user profile, etc
-        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-        
-        AFHTTPRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
-        [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-        [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
-        [manager setRequestSerializer: requestSerializer];
-
-        [manager POST:[NSString stringWithFormat:@"%@profile/digest", restBaseURL] parameters:Nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
+        [LBRestFacade asynchRetrieveGolferDigestWithSuccess: ^(AFHTTPRequestOperation *operation, id responseObject) {
 
             //parse the json golfer profile digest response (profile, upcoming rounds (comp and non comp), existing scorecard, etc)
-            NSDictionary *golferDigest = (NSDictionary*)responseObject;
-
-            // parse golfer profile
-            LBGolfer* golferProfile = [[LBGolfer alloc] initWithDictionary:(NSDictionary *)[golferDigest objectForKey:@"golfer"] error:nil];
-            [[LBDataManager sharedInstance] setGolferProfile:golferProfile];
-
-            // parse golfer favourite course list
-
-            NSArray<LBCourse>* favouriteCourseList = [LBCourse arrayOfModelsFromDictionaries:(NSArray*)[golferDigest objectForKey:@"favouriteCourseList"]];
-            [[LBDataManager sharedInstance] setFavouriteCourseList:favouriteCourseList];
-
-            // parse last x scorecards list
-            NSArray<LBScorecard> *lastXScorecardList = [[NSArray alloc] initWithArray: (NSArray<LBScorecard>*)[golferDigest objectForKey:@"lastXScorecardList"]];
-            [[LBDataManager sharedInstance] setLastXScorecardList: lastXScorecardList];
-
-            // parse upcoming competitions list
-            NSArray *upcomingCompetitionEntryList = [[NSArray alloc] initWithArray: (NSArray*)[golferDigest objectForKey:@"upcomingCompetitionEntryList"]];
-            [[LBDataManager sharedInstance] setUpcomingCompetitionEntryList: upcomingCompetitionEntryList];
-            
-            // parse upcoming non-competition-round list
-            NSArray *upcomingNonCompetitionRoundList = [[NSArray alloc] initWithArray: (NSArray*)[golferDigest objectForKey:@"upcomingNonCompetitionRoundList"]];
-            [[LBDataManager sharedInstance] setUpcomingNonCompetitionRoundList: upcomingNonCompetitionRoundList];
-
-            // check if there's an active scorecard
-            LBScorecard *activeScorecard = [[LBScorecard alloc] initWithDictionary:[golferDigest objectForKey:@"activeScorecard"] error:nil];
-            [[LBDataManager sharedInstance] setScorecard: activeScorecard];
+            [[LBDataManager sharedInstance] handleGolferDigest: (NSDictionary*)responseObject];
+            // since this is loaded from the login, it will not need to be loaded again when the menu loads
+            [[LBDataManager sharedInstance] setFirstLoad: true];
            
             successMethod(operation, responseObject);
         }
@@ -87,6 +58,18 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
         
     } failure:failure];
 
+}
+
++(void) asynchRetrieveGolferDigestWithSuccess: (void (^) (AFHTTPRequestOperation *operation, id responseObject))success failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure {
+
+    // do post login, load user profile, etc
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    AFHTTPRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [manager setRequestSerializer: requestSerializer];
+    [manager POST:[NSString stringWithFormat:@"%@profile/digest", restBaseURL] parameters:Nil success: success failure: failure];
 }
 
 +(void) asynchStartScorecardOnCourse: (NSString *) courseId withSuccess: (void (^) (AFHTTPRequestOperation *operation, id responseObject))success failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure
@@ -98,6 +81,7 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
     [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [manager setRequestSerializer: requestSerializer];
+
     
     [manager POST:[NSString stringWithFormat:@"%@start?courseId=%@", restScorecardURL, courseId] parameters:Nil success:success failure:failure];
 }
@@ -114,7 +98,7 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
         [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
         [manager setRequestSerializer: requestSerializer];
         
-        [manager POST:[NSString stringWithFormat:@"%@scoreHole?scorecardId=%@&holeNumber=%i&holeScore=%i", restScorecardURL, scorecardId, holeNumber, holeScore] parameters:Nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
+        [manager POST:[NSString stringWithFormat:@"%@scorehole?scorecardId=%@&holeNumber=%i&holeScore=%i", restScorecardURL, scorecardId, holeNumber, holeScore] parameters:Nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
             
             NSLog(@"score hole success");
 
@@ -175,5 +159,19 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
 +(void) asynchRetrieveCourseListWithSuccess:(void (^)(AFHTTPRequestOperation *, id)) success AndFailure :(void (^)(AFHTTPRequestOperation *, id))failure {
     
 }
+
++(void) asynchPlayNextUpcomingRound: (LBCompetitionRound *) competitionRound withSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success failure: (void (^)(AFHTTPRequestOperation *operation, NSError *error)) failure {
+    NSLog(@"playing next competition round");
+    //TODO Make the following four lines into a method
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    
+    AFHTTPRequestSerializer *requestSerializer = [AFJSONRequestSerializer serializer];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    [manager setRequestSerializer: requestSerializer];
+
+    [manager POST:[NSString stringWithFormat:@"%@competition?competitionRoundId=%@", restScorecardURL, competitionRound.idString] parameters:Nil success:success failure:failure];
+}
+
 
 @end
