@@ -43,6 +43,7 @@
 		506A66381A44CB2C00D4833D /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506A66371A44CB2C00D4833D /* TodayViewController.m */; };
 		506A663A1A44CB2C00D4833D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506A66391A44CB2C00D4833D /* MainInterface.storyboard */; };
 		506A663D1A44CB2C00D4833D /* ldrbrd-widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 506A66311A44CB2B00D4833D /* ldrbrd-widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		50B4E5651A4B9A0C008F65AE /* LBUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4E5641A4B9A0C008F65AE /* LBUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +165,8 @@
 		506A66391A44CB2C00D4833D /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		50B4E5611A4B94D2008F65AE /* ldrbrd-iphone-v3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ldrbrd-iphone-v3.entitlements"; sourceTree = "<group>"; };
 		50B4E5621A4B957B008F65AE /* ldrbrd-widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "ldrbrd-widget.entitlements"; sourceTree = "<group>"; };
+		50B4E5631A4B9A0C008F65AE /* LBUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBUserDefaults.h; sourceTree = "<group>"; };
+		50B4E5641A4B9A0C008F65AE /* LBUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBUserDefaults.m; sourceTree = "<group>"; };
 		58FDF9E883066621FFF6623B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F87858D62484A5952F20294 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BB859BCE4E4AFF2707ABD02F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -332,6 +335,8 @@
 		506A660F1A449C3800D4833D /* service */ = {
 			isa = PBXGroup;
 			children = (
+				50B4E5631A4B9A0C008F65AE /* LBUserDefaults.h */,
+				50B4E5641A4B9A0C008F65AE /* LBUserDefaults.m */,
 				506A66101A449C3800D4833D /* LBDataManager.h */,
 				506A66111A449C3800D4833D /* LBDataManager.m */,
 				506A66121A449C3800D4833D /* LBLocationManager.h */,
@@ -577,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				506A661F1A449C3800D4833D /* LBCourseHole.m in Sources */,
+				50B4E5651A4B9A0C008F65AE /* LBUserDefaults.m in Sources */,
 				50191FD31A43907700548963 /* LBPlayGolfVC.m in Sources */,
 				506A64191A443FE400D4833D /* LBPlayerSummaryView.m in Sources */,
 				50191FCF1A43907700548963 /* LBLandingVC.m in Sources */,
@@ -755,15 +761,12 @@
 				CODE_SIGN_ENTITLEMENTS = "ldrbrd-iphone-v3/ldrbrd-iphone-v3.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ldrbrd-ios/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ldrbrd-iphone-v3";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -777,15 +780,12 @@
 				CODE_SIGN_ENTITLEMENTS = "ldrbrd-iphone-v3/ldrbrd-iphone-v3.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ldrbrd-ios/build/Debug-iphoneos",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ldrbrd-iphone-v3";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

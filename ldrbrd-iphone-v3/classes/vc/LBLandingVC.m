@@ -8,6 +8,7 @@
 
 #import "LBLandingVC.h"
 #import "LBRestFacade.h"
+#import "LBUserDefaults.h"
 
 @interface LBLandingVC ()
 
@@ -31,7 +32,7 @@
 
 - (void)viewDidLoad
 {
-    NSLog(@"Continual scoring is turned %@", [[LBUserDefaults sharedInstance] continualScoring] ? @"ON" : @"OFF");
+    NSLog(@"Continual scoring is turned %@", [LBUserDefaults continualScoring] ? @"ON" : @"OFF");
     NSLog([[[NSUserDefaults standardUserDefaults] objectForKey:@"continualScoring"] boolValue] ? @"Yes" : @"No");
     [self.username setText: [[NSUserDefaults standardUserDefaults] objectForKey:@"username"]];
     // Do any additional setup after loading the view.
