@@ -88,7 +88,8 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
 
 +(void) asynchScoreHoleWithHoleNumber: (int) holeNumber WithHoleScore: (int) holeScore WithScorecardId: (NSString *) scorecardId
 {
-    if([[[NSUserDefaults standardUserDefaults] objectForKey:@"continualScoring"] boolValue]) {
+    //TODO REMOVE || YES when the NSUserDefaults is fixed!
+    if([[[NSUserDefaults standardUserDefaults] objectForKey:@"continualScoring"] boolValue] || YES) {
         // if continual scoring is turned on
         NSLog(@"Scoring hole %i for scorecard %@ with score %i", holeNumber, scorecardId, holeScore);
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

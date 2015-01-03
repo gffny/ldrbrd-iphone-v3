@@ -28,6 +28,7 @@
 @property (nonatomic, strong) NSMutableArray *flightPathArray;
 @property (nonatomic) int holeScore;
 @property (nonatomic) int holePointer;
+@property (nonatomic) BOOL isShowingLandscapeView;
 
 // UI LABELS
 @property (strong, nonatomic) IBOutlet UILabel *parLabel;
@@ -40,6 +41,8 @@
 @end
 
 @implementation LBPlayGolfVC
+
+@synthesize isShowingLandscapeView;
 
 - (void) viewDidLoad
 {
@@ -55,11 +58,41 @@
     // Initialise Storage
     [self setFlightPathArray: [[NSMutableArray alloc] init]];
 
-    self.holeScore = 0;
-    self.holePointer = 0;
+    self.holePointer = [self evalLastPlayedHole: [[[LBDataManager sharedInstance] scorecard] holeScoreArray]];
 
     [self loadHoleIntoView: [[[LBDataManager sharedInstance] course] holeWithNumber: [self actualHoleNumber]]];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
+-(int) evalLastPlayedHole: (NSArray *) holeScoreArray
+{
+    if(holeScoreArray != nil && holeScoreArray.count > 0)
+    {
+        for(int holeNumber = 0; holeNumber < holeScoreArray.count; holeNumber ++)
+        {
+            if(holeScoreArray[holeNumber] == 0)
+            {
+                return holeNumber == 0 ? 0 : holeNumber - 1;
+            }
+            else
+            {
+                [[LBDataManager sharedInstance] setScore: (NSNumber *) holeScoreArray[holeNumber] forHole: [NSNumber numberWithInt:holeNumber]];
+                self.holeScore = [holeScoreArray[holeNumber] intValue];
+            }
+        }
+        return holeScoreArray.count == 0 ? (int) 0 : (int) holeScoreArray.count - 1;
+    }
+    return 0;
+}
+
+- (void)awakeFromNib
+{
+    isShowingLandscapeView = NO;
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(orientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
 }
 
 - (void) loadCourseInView: (LBCourse *) courseToLoad
@@ -97,7 +130,6 @@
     // add score to hole @ gps location
 }
 
-
 - (IBAction) showGestureForTapRecognizer:(UITapGestureRecognizer *)recognizer
 {
     
@@ -106,7 +138,6 @@
     
     // add score to hole @ gps location
 }
-
 
 - (void) oneFingerSwipeLeft:(UITapGestureRecognizer *)recognizer
 {
@@ -210,5 +241,24 @@
     [self setHolePointer:holeNumber];
 }
 
+- (void)orientationChanged:(NSNotification *)notification
+{
+    NSLog(@"orientation notification recieved");
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if (UIDeviceOrientationIsLandscape(deviceOrientation) &&
+        !isShowingLandscapeView)
+    {
+        NSLog(@"orientation changed: displaying leaderboard");
+        [self performSegueWithIdentifier:@"seg_dsplyLdrbrd" sender:self];
+        isShowingLandscapeView = YES;
+    }
+    else if (UIDeviceOrientationIsPortrait(deviceOrientation) &&
+             isShowingLandscapeView)
+    {
+        NSLog(@"orientation changed: returning to golf gaming");
+        [self.navigationController popViewControllerAnimated:TRUE];
+        isShowingLandscapeView = NO;
+    }
+}
 
 @end

@@ -30,7 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     if([[LBDataManager sharedInstance] firstLoad] == false) {
         [LBRestFacade asynchRetrieveGolferDigestWithSuccess: ^(AFHTTPRequestOperation *operation, id responseObject) {
             //parse the json golfer profile digest response (profile, upcoming rounds (comp and non comp), existing scorecard, etc)
@@ -129,7 +128,6 @@
         NSLog(@"loading main lbrdbrd-app view");
     }
     return self;
-
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -144,6 +142,19 @@
         LBPlayGolfVC *playGolfVC = (LBPlayGolfVC *)segue.destinationViewController;
         [playGolfVC loadCourseInView: [[[LBDataManager sharedInstance] scorecard] course]];
     }
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (BOOL)shouldAutorotate {
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    if (orientation == UIInterfaceOrientationPortrait) {
+        return NO;
+    }
+    return YES;
 }
 
 #pragma mark - Table view data source

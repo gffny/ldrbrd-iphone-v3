@@ -24,6 +24,7 @@
 @property NSString *courseDocumentId;
 @property LBCourse *course;
 @property NSString *roundDate;
+@property NSArray *holeScoreArray;
 @property NSString<Ignore> *roundDateDT;
 @property NSString<Optional> *active;
 @property NSString<Optional> *handicap;

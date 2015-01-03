@@ -14,7 +14,7 @@
 
 @interface LBPlayGolfVC : UIViewController
 
-- (void) observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context;
+//- (void) observeValueForKeyPath:(NSString*)keyPath ofObject:(id)object change:(NSDictionary*)change context:(void*)context;
 - (void) loadCourseInView: (LBCourse *) courseToLoad;
 - (void) setHoleToView: (int) holeNumber;
 

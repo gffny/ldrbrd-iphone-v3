@@ -8,6 +8,7 @@
 
 #import "LBRoundSummaryVC.h"
 #import "LBScorecardUtils.h"
+#import "LBLeaderboardWebVC.h"
 #import "LBDataManager.h"
 #import "LBRestFacade.h"
 
@@ -23,14 +24,19 @@
 @property (strong, nonatomic) IBOutlet UILabel *parCountValue;
 @property (strong, nonatomic) IBOutlet UILabel *bogeyCountValue;
 @property (strong, nonatomic) IBOutlet UILabel *bogeyPlusCountValue;
-@end
 
+@property (nonatomic) BOOL isShowingLandscapeView;
+
+@end
 
 @implementation LBRoundSummaryVC
 
 @synthesize submitScorecardBtn;
 @synthesize summaryTable;
+@synthesize isShowingLandscapeView;
+
 LBCourse *course;
+LBLeaderboardWebVC *leaderboardVC;
 
 - (void)viewDidLoad {
 
@@ -41,6 +47,47 @@ LBCourse *course;
     self.summaryTable.bounces = NO;
     course = [[LBDataManager sharedInstance] course];
     [self.submitScorecardBtn addTarget:self action:@selector(sbmtScrcrdBtnClckd:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)awakeFromNib
+{
+    isShowingLandscapeView = NO;
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(orientationChanged:)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+}
+
+- (void)orientationChanged:(NSNotification *)notification
+{
+    NSLog(@"orientation notification recieved");
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if (UIDeviceOrientationIsLandscape(deviceOrientation) &&
+        !isShowingLandscapeView)
+    {
+        NSLog(@"orientation changed: displaying leaderboard");
+        [self performSegueWithIdentifier:@"seg_dsplyLdrbrd" sender:self];
+        isShowingLandscapeView = YES;
+    }
+    else if (UIDeviceOrientationIsPortrait(deviceOrientation) &&
+             isShowingLandscapeView)
+    {
+        NSLog(@"orientation changed: returning to round summary");
+        if(leaderboardVC != nil)
+        {
+            [leaderboardVC dismissLeaderboard];
+        }
+        isShowingLandscapeView = NO;
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+     if([[segue identifier] isEqualToString:@"seg_dsplyLdrbrd"])
+     {
+         leaderboardVC = [segue destinationViewController];
+     }
 }
 
 - (void)sbmtScrcrdBtnClckd:(UIButton *)sender {

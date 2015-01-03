@@ -126,5 +126,13 @@ NSMutableArray<LBGolfer> *friendGolferArray;
     }
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    if (orientation == UIInterfaceOrientationPortrait)
+    {
+        return YES;
+    }
+    return NO;
+}
 
 @end

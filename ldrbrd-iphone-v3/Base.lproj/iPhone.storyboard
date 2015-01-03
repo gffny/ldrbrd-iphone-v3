@@ -98,7 +98,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LEADERBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dN0-Aa-tQs">
-                                            <rect key="frame" x="20" y="7" width="151" height="30"/>
+                                            <rect key="frame" x="20" y="6.5" width="151" height="29.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -227,7 +227,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="E24DFE44-B30B-4033-8915-3100BE995E01" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="BA691E3F-EB4F-40A6-8401-6226A8C13109" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tXI-fR-Fpw">
@@ -325,7 +325,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="E24DFE44-B30B-4033-8915-3100BE995E01" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="BA691E3F-EB4F-40A6-8401-6226A8C13109" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aet-ZI-Ado">
@@ -989,6 +989,7 @@
                         <outlet property="indexLabel" destination="esm-kk-URp" id="Jn7-1M-CaR"/>
                         <outlet property="parLabel" destination="eZB-Gt-8Ns" id="b0Q-qA-Toc"/>
                         <segue destination="MSn-wV-mI5" kind="modal" identifier="seg_shwsmmry" id="3Ye-9T-LaW"/>
+                        <segue destination="2av-wz-x21" kind="push" identifier="seg_dsplyLdrbrd" id="eXb-lE-oqZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDq-1V-Sid" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1360,6 +1361,7 @@
                         <outlet property="summaryTable" destination="ZMO-1Y-Yxa" id="ebb-Uk-l7Q"/>
                         <outlet property="toParValue" destination="DHE-Bm-RKl" id="jDJ-BX-wIy"/>
                         <segue destination="CGr-xJ-8M4" kind="modal" identifier="seg_sgnscrcrd" id="FaR-HF-Hq0"/>
+                        <segue destination="2av-wz-x21" kind="modal" identifier="seg_dsplyLdrbrd" id="3sN-B6-hTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUz-19-gxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1388,6 +1390,7 @@
                     <navigationItem key="navigationItem" id="r87-mZ-PnN"/>
                     <connections>
                         <outlet property="sgnScrcrdBtn" destination="H9L-G4-1BV" id="Fwf-SH-EHU"/>
+                        <segue destination="2av-wz-x21" kind="modal" identifier="seg_dsplyLdrbrd" id="Phu-oz-QyE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="COR-1m-AaU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1432,7 +1435,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="E24DFE44-B30B-4033-8915-3100BE995E01" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="BA691E3F-EB4F-40A6-8401-6226A8C13109" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Se5-Gu-dnO">
@@ -1495,6 +1498,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5rL-kW-aac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1803" y="1944"/>
+        </scene>
+        <!--Leaderboard WebVC-->
+        <scene sceneID="g1y-VI-dfl">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="overFullScreen" id="2av-wz-x21" customClass="LBLeaderboardWebVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MuT-3q-XY7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="Agk-XR-Qsk">
+                                <rect key="frame" x="0.0" y="5" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mR3-WQ-QXt"/>
+                    <connections>
+                        <outlet property="webView" destination="Agk-XR-Qsk" id="LUc-cE-Spj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWY-Pp-E5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944" y="1944"/>
         </scene>
         <!--Recent-->
         <scene sceneID="Wb8-qC-0zK">
@@ -1571,7 +1600,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="E24DFE44-B30B-4033-8915-3100BE995E01" width="256" height="256">
+        <image name="BA691E3F-EB4F-40A6-8401-6226A8C13109" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -6024,5 +6053,6 @@ AAAAAAAEAQAAAAAAAABCAAAAAAAAAAAAAAAAAAQO4w
         <segue reference="Wpw-cM-yqD"/>
         <segue reference="7zF-yp-W4p"/>
         <segue reference="Va6-Vr-VcI"/>
+        <segue reference="eXb-lE-oqZ"/>
     </inferredMetricsTieBreakers>
 </document>
