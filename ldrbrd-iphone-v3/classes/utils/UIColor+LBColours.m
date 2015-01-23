@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 gffny.com. All rights reserved.
 //
 
-#import "UIColor+lbColours.h"
+#import "UIColor+LBColours.h"
 
-@implementation UIColor (lbColours)
+@implementation UIColor (LBColours)
 
-+ (UIColor *)lbBlueColour
++ (UIColor *)LBBlueColour
 {
     static UIColor *darkBlueColour;
     static dispatch_once_t onceToken;
@@ -20,7 +20,7 @@
     return darkBlueColour;
 }
 
-+ (UIColor *)lbGreyColour
++ (UIColor *)LBGreyColour
 {
     static UIColor *lightGreyColour;
     static dispatch_once_t onceToken;
@@ -30,7 +30,7 @@
     return lightGreyColour;
 }
 
-+ (UIColor *)lbOrangeColour
++ (UIColor *)LBOrangeColour
 {
     static UIColor *lightYellowColour;
     static dispatch_once_t onceToken;

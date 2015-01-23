@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIColor (lbColours)
+@interface UIColor (LBColours)
 
-+ (UIColor *)lbBlueColour;
-+ (UIColor *)lbGreyColour;
-+ (UIColor *)lbOrangeColour;
++ (UIColor *)LBBlueColour;
++ (UIColor *)LBGreyColour;
++ (UIColor *)LBOrangeColour;
 
 @end

@@ -83,13 +83,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)shouldAutorotate {
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
-    if (orientation == UIInterfaceOrientationPortrait) {
-        return NO;
-    }
-    return YES;
-}
-
 @end
 

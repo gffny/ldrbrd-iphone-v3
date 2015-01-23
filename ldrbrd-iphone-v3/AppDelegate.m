@@ -38,21 +38,21 @@
 
 - (void)initializeStyling
 {
-    [[UISearchBar appearance] setBarTintColor:[UIColor lbGreyColour]];
-    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor lbBlueColour]];
-    [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor lbBlueColour]];
+    [[UISearchBar appearance] setBarTintColor:[UIColor LBGreyColour]];
+    [[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor LBBlueColour]];
+    [[UILabel appearanceWhenContainedIn:[UISearchBar class], nil] setTextColor:[UIColor LBBlueColour]];
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage alloc]];
     [[UITabBarItem appearance] setTitleTextAttributes:
-     @{ NSForegroundColorAttributeName: [UIColor lbBlueColour],
+     @{ NSForegroundColorAttributeName: [UIColor LBBlueColour],
         NSFontAttributeName: [UIFont preferredFontForTextStyle: UIFontTextStyleCaption2]}
                                              forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:
-     @{ NSForegroundColorAttributeName: [UIColor lbBlueColour],
+     @{ NSForegroundColorAttributeName: [UIColor LBBlueColour],
         NSFontAttributeName: [UIFont preferredFontForTextStyle: UIFontTextStyleCaption2]}
                                              forState:UIControlStateSelected];
-    self.window.tintColor = [UIColor lbBlueColour];
-    [[UINavigationBar appearance] setBarTintColor:[UIColor lbBlueColour]];
-    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor lbGreyColour], NSForegroundColorAttributeName, nil]];
+    self.window.tintColor = [UIColor LBBlueColour];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor LBBlueColour]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor LBGreyColour], NSForegroundColorAttributeName, nil]];
     // add
 }
 
