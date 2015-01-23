@@ -53,6 +53,7 @@
 		50B4E56D1A4E3818008F65AE /* LBMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4E56A1A4E3818008F65AE /* LBMainVC.m */; };
 		50B4E56E1A4E3818008F65AE /* LBMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4E56C1A4E3818008F65AE /* LBMenuVC.m */; };
 		50C7DE811A6F4934007909AB /* LBLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7DE801A6F4934007909AB /* LBLoginView.m */; };
+		50FC3A911A71FABA00B23A96 /* UIFont+LBFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FC3A901A71FABA00B23A96 /* UIFont+LBFont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +188,8 @@
 		50B4E56C1A4E3818008F65AE /* LBMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBMenuVC.m; sourceTree = "<group>"; };
 		50C7DE7F1A6F4934007909AB /* LBLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLoginView.h; path = view/LBLoginView.h; sourceTree = "<group>"; };
 		50C7DE801A6F4934007909AB /* LBLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLoginView.m; path = view/LBLoginView.m; sourceTree = "<group>"; };
+		50FC3A8F1A71FA3C00B23A96 /* UIFont+LBFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+LBFont.h"; sourceTree = "<group>"; };
+		50FC3A901A71FABA00B23A96 /* UIFont+LBFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LBFont.m"; sourceTree = "<group>"; };
 		58FDF9E883066621FFF6623B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F87858D62484A5952F20294 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BB859BCE4E4AFF2707ABD02F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -388,6 +391,8 @@
 				506A661B1A449C3800D4833D /* LBScorecardUtils.m */,
 				506A661C1A449C3800D4833D /* UIColor+LBColours.h */,
 				506A661D1A449C3800D4833D /* UIColor+LBColours.m */,
+				50FC3A8F1A71FA3C00B23A96 /* UIFont+LBFont.h */,
+				50FC3A901A71FABA00B23A96 /* UIFont+LBFont.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -642,6 +647,7 @@
 				50191FD21A43907700548963 /* LBPlayGolfNowVC.m in Sources */,
 				506A66221A449C3800D4833D /* LBDataManager.m in Sources */,
 				506A661E1A449C3800D4833D /* LBCourse.m in Sources */,
+				50FC3A911A71FABA00B23A96 /* UIFont+LBFont.m in Sources */,
 				506A66261A449C3800D4833D /* LBScorecardUtils.m in Sources */,
 				50191F651A43842A00548963 /* main.m in Sources */,
 				506A66271A449C3800D4833D /* UIColor+LBColours.m in Sources */,
@@ -712,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_GROUP = "";
+				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -745,6 +752,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
+				INSTALL_OWNER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -757,6 +765,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALTERNATE_GROUP = "";
+				ALTERNATE_OWNER = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -784,6 +793,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INSTALL_GROUP = "";
+				INSTALL_OWNER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -803,6 +813,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
+				INSTALL_OWNER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -825,6 +836,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "ldrbrd-iphone-v3/Info.plist";
+				INSTALL_OWNER = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

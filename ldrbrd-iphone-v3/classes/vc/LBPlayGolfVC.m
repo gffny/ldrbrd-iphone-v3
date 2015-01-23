@@ -13,6 +13,7 @@
 #import "LBLocationManager.h"
 #import "LBRestFacade.h"
 #import "LBScorecardUtils.h"
+#import "UIFont+LBFont.h"
 
 @interface LBPlayGolfVC ()
 
@@ -37,6 +38,17 @@
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (strong, nonatomic) IBOutlet UILabel *holeScoreLabel;
 @property (strong, nonatomic) IBOutlet UILabel *holeNumberLabel;
+
+// Slider LABELS
+@property (weak, nonatomic) IBOutlet UILabel *slider1;
+@property (weak, nonatomic) IBOutlet UILabel *slider2;
+@property (weak, nonatomic) IBOutlet UILabel *slider3;
+@property (weak, nonatomic) IBOutlet UILabel *slider4;
+@property (weak, nonatomic) IBOutlet UILabel *slider5;
+@property (weak, nonatomic) IBOutlet UILabel *slider6;
+@property (weak, nonatomic) IBOutlet UILabel *slider7;
+@property (weak, nonatomic) IBOutlet UILabel *slider8;
+@property (weak, nonatomic) IBOutlet UILabel *slider9;
 
 @end
 
@@ -108,6 +120,299 @@
     [self.indexLabel setText: [NSString stringWithFormat: @"%@", courseHole.index]];
     [self.descriptionLabel setText: courseHole.holeDescription];
     [self.holeScoreLabel setText: [NSString stringWithFormat: @"%i", self.holeScore]];
+    [self loadSliderPosition: [courseHole.holeNumber intValue]];
+}
+
+-(void) loadSliderPosition: (int) holeNumber
+{
+    if(holeNumber == 1) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderLarge]];
+        [self.slider2 setText: [NSString stringWithFormat:@"%i", 2]];
+        [self.slider2 setFont: [UIFont LBSliderMedium]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 3]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"."]];
+        [self.slider5 setText: [NSString stringWithFormat:@"."]];
+        [self.slider6 setText: [NSString stringWithFormat:@"."]];
+        [self.slider7 setText: [NSString stringWithFormat:@"."]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 2) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderMedium]];
+        [self.slider2 setText: [NSString stringWithFormat:@"%i", 2]];
+        [self.slider2 setFont: [UIFont LBSliderLarge]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 3]];
+        [self.slider3 setFont: [UIFont LBSliderMedium]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 4]];
+        [self.slider4 setFont: [UIFont LBSliderSmall]];
+        [self.slider5 setText: [NSString stringWithFormat:@"."]];
+        [self.slider6 setText: [NSString stringWithFormat:@"."]];
+        [self.slider7 setText: [NSString stringWithFormat:@"."]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 3) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"%i", 2]];
+        [self.slider2 setFont: [UIFont LBSliderMedium]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 3]];
+        [self.slider3 setFont: [UIFont LBSliderLarge]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 4]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 5]];
+        [self.slider5 setFont: [UIFont LBSliderSmall]];
+        [self.slider6 setText: [NSString stringWithFormat:@"."]];
+        [self.slider7 setText: [NSString stringWithFormat:@"."]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+    } else if(holeNumber == 4) {
+        [self.slider1 setText: [NSString stringWithFormat:@"."]];
+        [self.slider2 setText: [NSString stringWithFormat:@"%i", 2]];
+        [self.slider2 setFont: [UIFont LBSliderSmall]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 3]];
+        [self.slider3 setFont: [UIFont LBSliderMedium]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 4]];
+        [self.slider4 setFont: [UIFont LBSliderLarge]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 5]];
+        [self.slider5 setFont: [UIFont LBSliderMedium]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 6]];
+        [self.slider6 setFont: [UIFont LBSliderSmall]];
+        [self.slider7 setText: [NSString stringWithFormat:@"."]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 5) {
+        [self.slider1 setText: [NSString stringWithFormat:@"."]];
+        [self.slider2 setText: [NSString stringWithFormat:@"%i", 3]];
+        [self.slider2 setFont: [UIFont LBSliderSmall]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 4]];
+        [self.slider3 setFont: [UIFont LBSliderMedium]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 5]];
+        [self.slider4 setFont: [UIFont LBSliderLarge]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 6]];
+        [self.slider5 setFont: [UIFont LBSliderMedium]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 7]];
+        [self.slider6 setFont: [UIFont LBSliderSmall]];
+        [self.slider7 setText: [NSString stringWithFormat:@"."]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 6) {
+        [self.slider1 setText: [NSString stringWithFormat:@"."]];
+        [self.slider2 setText: [NSString stringWithFormat:@"%i", 4]];
+        [self.slider2 setFont: [UIFont LBSliderSmall]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 5]];
+        [self.slider3 setFont: [UIFont LBSliderMedium]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 6]];
+        [self.slider4 setFont: [UIFont LBSliderLarge]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 7]];
+        [self.slider5 setFont: [UIFont LBSliderMedium]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 8]];
+        [self.slider6 setFont: [UIFont LBSliderSmall]];
+        [self.slider7 setText: [NSString stringWithFormat:@"."]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 7) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 5]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 6]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 7]];
+        [self.slider5 setFont: [UIFont LBSliderLarge]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 8]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 9]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 8) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 6]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 7]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 8]];
+        [self.slider5 setFont: [UIFont LBSliderLarge]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 9]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 10]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 9) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 7]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 8]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 9]];
+        [self.slider5 setFont: [UIFont LBSliderLarge]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 10]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 11]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 10) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 8]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 9]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 10]];
+        [self.slider5 setFont: [UIFont LBSliderLarge]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 11]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 12]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 11) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 9]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 10]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 11]];
+        [self.slider5 setFont: [UIFont LBSliderLarge]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 12]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 13]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 12) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"%i", 10]];
+        [self.slider3 setFont: [UIFont LBSliderSmall]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 11]];
+        [self.slider4 setFont: [UIFont LBSliderMedium]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 12]];
+        [self.slider5 setFont: [UIFont LBSliderLarge]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 13]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 14]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"."]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 13) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"."]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 11]];
+        [self.slider4 setFont: [UIFont LBSliderSmall]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 12]];
+        [self.slider5 setFont: [UIFont LBSliderMedium]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 13]];
+        [self.slider6 setFont: [UIFont LBSliderLarge]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 14]];
+        [self.slider7 setFont: [UIFont LBSliderMedium]];
+        [self.slider8 setText: [NSString stringWithFormat:@"%i", 15]];
+        [self.slider8 setFont: [UIFont LBSliderSmall]];
+        [self.slider9 setText: [NSString stringWithFormat:@"."]];
+    } else if(holeNumber == 14) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"."]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 12]];
+        [self.slider4 setFont: [UIFont LBSliderSmall]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 13]];
+        [self.slider5 setFont: [UIFont LBSliderMedium]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 14]];
+        [self.slider6 setFont: [UIFont LBSliderLarge]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 15]];
+        [self.slider7 setFont: [UIFont LBSliderMedium]];
+        [self.slider8 setText: [NSString stringWithFormat:@"%i", 16]];
+        [self.slider8 setFont: [UIFont LBSliderSmall]];
+        [self.slider9 setText: [NSString stringWithFormat:@"."]];
+    } else if(holeNumber == 15) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"."]];
+        [self.slider4 setText: [NSString stringWithFormat:@"%i", 13]];
+        [self.slider4 setFont: [UIFont LBSliderSmall]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 14]];
+        [self.slider5 setFont: [UIFont LBSliderMedium]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 15]];
+        [self.slider6 setFont: [UIFont LBSliderLarge]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 16]];
+        [self.slider7 setFont: [UIFont LBSliderMedium]];
+        [self.slider8 setText: [NSString stringWithFormat:@"%i", 17]];
+        [self.slider8 setFont: [UIFont LBSliderSmall]];
+        [self.slider9 setText: [NSString stringWithFormat:@"."]];
+    } else if(holeNumber == 16) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"."]];
+        [self.slider4 setText: [NSString stringWithFormat:@"."]];
+        [self.slider5 setText: [NSString stringWithFormat:@"%i", 14]];
+        [self.slider5 setFont: [UIFont LBSliderSmall]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 15]];
+        [self.slider6 setFont: [UIFont LBSliderMedium]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 16]];
+        [self.slider7 setFont: [UIFont LBSliderLarge]];
+        [self.slider8 setText: [NSString stringWithFormat:@"%i", 17]];
+        [self.slider8 setFont: [UIFont LBSliderMedium]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderSmall]];
+    } else if(holeNumber == 17) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"."]];
+        [self.slider4 setText: [NSString stringWithFormat:@"."]];
+        [self.slider5 setText: [NSString stringWithFormat:@"."]];
+        [self.slider6 setText: [NSString stringWithFormat:@"%i", 15]];
+        [self.slider6 setFont: [UIFont LBSliderSmall]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 16]];
+        [self.slider7 setFont: [UIFont LBSliderMedium]];
+        [self.slider8 setText: [NSString stringWithFormat:@"%i", 17]];
+        [self.slider8 setFont: [UIFont LBSliderLarge]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderMedium]];
+    } else if(holeNumber == 18) {
+        [self.slider1 setText: [NSString stringWithFormat:@"%i", 1]];
+        [self.slider1 setFont: [UIFont LBSliderSmall]];
+        [self.slider2 setText: [NSString stringWithFormat:@"."]];
+        [self.slider3 setText: [NSString stringWithFormat:@"."]];
+        [self.slider4 setText: [NSString stringWithFormat:@"."]];
+        [self.slider5 setText: [NSString stringWithFormat:@"."]];
+        [self.slider6 setText: [NSString stringWithFormat:@"."]];
+        [self.slider7 setText: [NSString stringWithFormat:@"%i", 16]];
+        [self.slider7 setFont: [UIFont LBSliderSmall]];
+        [self.slider8 setText: [NSString stringWithFormat:@"%i", 17]];
+        [self.slider8 setFont: [UIFont LBSliderMedium]];
+        [self.slider9 setText: [NSString stringWithFormat:@"%i", 18]];
+        [self.slider9 setFont: [UIFont LBSliderLarge]];
+    }
 }
 
 - (void) handleGesture:(UILongPressGestureRecognizer *)gesture
