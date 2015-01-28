@@ -20,14 +20,32 @@
             }
         }
         // check that the score array and course hole count match
-        if(scorecard != NULL && scorecard.course != NULL && scorecard.course.courseHoleList != NULL) {
-            if(scorecard.course.courseHoleList.count != scoreArray.count) {
+        if(scorecard != NULL && scorecard.course != NULL && scorecard.course.courseHoleList != NULL && scorecard.course.courseHoleList.count != scoreArray.count) {
                 return FALSE;
-            }
         }
         return TRUE;
     }
     return FALSE;
+}
+
++(LBCourseHole *) firstIncompleteHole: (NSArray *) scoreArray forScorecard: (LBScorecard *) scorecard orLastHole: (BOOL) sendLastHole
+{
+    // check if the scorecard is valid
+    if(scoreArray != NULL && scorecard != NULL && scorecard.course != NULL && scorecard.course.courseHoleList != NULL) {
+        // check each hole is not 0
+        for(int i = 0; i<scoreArray.count; i++) {
+            if((int)[[scoreArray objectAtIndex:i] intValue] < 1 ) {
+                return [scorecard.course.courseHoleList objectAtIndex: i];
+            } else if (i == scorecard.course.courseHoleList.count && sendLastHole) {
+                return [scorecard.course.courseHoleList lastObject];
+            }
+        }
+        // if none of the scoreArray holes are incomplete, is the courseHoleList length = scoreArray length?
+        if(scoreArray.count < scorecard.course.courseHoleList.count) {
+            return [scorecard.course.courseHoleList objectAtIndex: scoreArray.count];
+        }
+    }
+    return nil;
 }
 
 +(int) countScore: (NSArray *) scoreArray {

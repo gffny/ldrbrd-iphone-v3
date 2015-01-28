@@ -11,19 +11,76 @@
 
 @implementation UIFont (LBFont)
 
+
 + (UIFont *) LBSliderSmall;
 {
-    return [UIFont fontWithName:@"HelveticaNeue-Thin" size:12];
+    static UIFont *lbSliderSmall;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbSliderSmall = [UIFont fontWithName:@"HelveticaNeue-Thin" size:12];
+    });
+    return lbSliderSmall;
 }
 
 + (UIFont *) LBSliderMedium
 {
-    return [UIFont fontWithName:@"HelveticaNeue-Condensed" size:16];
+    static UIFont *lbSliderMedium;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbSliderMedium = [UIFont fontWithName:@"HelveticaNeue-Condensed" size:16];
+    });
+    return lbSliderMedium;
 }
 
 + (UIFont *) LBSliderLarge
 {
-    return[UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:20];
+    static UIFont *lbSliderLarge;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbSliderLarge = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:20];
+    });
+    return lbSliderLarge;
+    
+}
+
++ (UIFont *) LBHoleScoreBasic
+{
+    static UIFont *lbHoleScoreBasic;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScoreBasic = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:80];
+    });
+    return lbHoleScoreBasic;
+}
+
++ (UIFont *) LBHoleScoreEagle
+{
+    return [UIFont LBHoleScoreBasic];
+}
+
++ (UIFont *) LBHoleScoreBirdie
+{
+    return [UIFont LBHoleScoreBasic];
+}
+
++ (UIFont *) LBHoleScorePar
+{
+    return [UIFont LBHoleScoreBasic];
+}
+
++ (UIFont *) LBHoleScoreBogie
+{
+    return [UIFont LBHoleScoreBasic];
+}
+
++ (UIFont *) LBHoleScoreDBogie
+{
+    return [UIFont LBHoleScoreBasic];
+}
+
++ (UIFont *) LBHoleScoreDBogiePlus
+{
+    return [UIFont LBHoleScoreBasic];
 }
 
 @end

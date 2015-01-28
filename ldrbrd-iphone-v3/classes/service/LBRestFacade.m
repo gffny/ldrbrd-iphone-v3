@@ -101,7 +101,7 @@ failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
         
         [manager POST:[NSString stringWithFormat:@"%@scorehole?scorecardId=%@&holeNumber=%i&holeScore=%i", restScorecardURL, scorecardId, holeNumber, holeScore] parameters:Nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
             
-            NSLog(@"score hole success");
+            NSLog(@"score hole success; hole number %i - hole score %i - scorecard id %@", holeNumber, holeScore, scorecardId);
 
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {

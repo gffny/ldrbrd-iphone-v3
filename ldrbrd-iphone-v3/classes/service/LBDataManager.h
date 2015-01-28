@@ -49,6 +49,7 @@
 -(LBCourse *) course;
 
 -(BOOL) isInRound;
+-(void) loadScoreArray: (NSArray *) holeScoreArray;
 -(NSInteger) getScoreForHole: (NSNumber *) holeNumber;
 
 -(void) handleGolferDigest: (NSDictionary *) golferDigest;

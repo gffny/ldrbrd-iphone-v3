@@ -1,5 +1,5 @@
 //
-//  lbUIColour.m
+//  LBUIColour.m
 //  ldrbrd-iphone-v2
 //
 //  Created by John D. Gaffney on 3/26/14.
@@ -39,5 +39,66 @@
     });
     return lightYellowColour;
 }
+
++ (UIColor *) LBHoleScoreEagle
+{
+    static UIColor *lbHoleScoreEagle;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScoreEagle = [UIColor colorWithRed:100.0f/255.0f green:150.0f/255.0f blue:50.0f/255.0f alpha:1.0];
+    });
+    return lbHoleScoreEagle;
+}
+
++ (UIColor *) LBHoleScoreBirdie
+{
+    static UIColor *lbHoleScoreBirdie;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScoreBirdie = [UIColor colorWithRed:150.0f/255.0f green:150.0f/255.0f blue:50.0f/255.0f alpha:1.0];
+    });
+    return lbHoleScoreBirdie;
+}
+
++ (UIColor *) LBHoleScorePar
+{
+    static UIColor *lbHoleScorePar;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScorePar = [UIColor colorWithRed:150.0f/255.0f green:125.0f/255.0f blue:0.0f/255.0f alpha:1.0];
+    });
+    return lbHoleScorePar;
+}
+
++ (UIColor *) LBHoleScoreBogie
+{
+    static UIColor *lbHoleScoreBogie;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScoreBogie = [UIColor colorWithRed:230.0f/255.0f green:150.0f/255.0f blue:40.0f/255.0f alpha:1.0];
+    });
+    return lbHoleScoreBogie;
+}
+
++ (UIColor *) LBHoleScoreDBogie
+{
+    static UIColor *lbHoleScoreDBogie;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScoreDBogie = [UIColor colorWithRed:255.0f/255.0f green:100.0f/255.0f blue:0.0f/255.0f alpha:1.0];
+    });
+    return lbHoleScoreDBogie;
+}
+
++ (UIColor *) LBHoleScoreDBogiePlus
+{
+    static UIColor *lbHoleScoreDBogiePlus;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        lbHoleScoreDBogiePlus = [UIColor colorWithRed:255.0f/255.0f green:0.0f/255.0f blue:0.0f/255.0f alpha:1.0];
+    });
+    return lbHoleScoreDBogiePlus;
+}
+
 
 @end

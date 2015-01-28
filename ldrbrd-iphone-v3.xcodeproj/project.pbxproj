@@ -53,6 +53,7 @@
 		50B4E56D1A4E3818008F65AE /* LBMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4E56A1A4E3818008F65AE /* LBMainVC.m */; };
 		50B4E56E1A4E3818008F65AE /* LBMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4E56C1A4E3818008F65AE /* LBMenuVC.m */; };
 		50C7DE811A6F4934007909AB /* LBLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C7DE801A6F4934007909AB /* LBLoginView.m */; };
+		50F4831B1A774B0F007CEF61 /* LBDisplayUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F4831A1A774B0F007CEF61 /* LBDisplayUtils.m */; };
 		50FC3A911A71FABA00B23A96 /* UIFont+LBFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FC3A901A71FABA00B23A96 /* UIFont+LBFont.m */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +189,8 @@
 		50B4E56C1A4E3818008F65AE /* LBMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBMenuVC.m; sourceTree = "<group>"; };
 		50C7DE7F1A6F4934007909AB /* LBLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBLoginView.h; path = view/LBLoginView.h; sourceTree = "<group>"; };
 		50C7DE801A6F4934007909AB /* LBLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBLoginView.m; path = view/LBLoginView.m; sourceTree = "<group>"; };
+		50F483191A774B0F007CEF61 /* LBDisplayUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDisplayUtils.h; sourceTree = "<group>"; };
+		50F4831A1A774B0F007CEF61 /* LBDisplayUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDisplayUtils.m; sourceTree = "<group>"; };
 		50FC3A8F1A71FA3C00B23A96 /* UIFont+LBFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+LBFont.h"; sourceTree = "<group>"; };
 		50FC3A901A71FABA00B23A96 /* UIFont+LBFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LBFont.m"; sourceTree = "<group>"; };
 		58FDF9E883066621FFF6623B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -385,6 +388,8 @@
 			isa = PBXGroup;
 			children = (
 				506A66171A449C3800D4833D /* LBConstant.h */,
+				50F483191A774B0F007CEF61 /* LBDisplayUtils.h */,
+				50F4831A1A774B0F007CEF61 /* LBDisplayUtils.m */,
 				506A66181A449C3800D4833D /* LBGolfShotProfiler.h */,
 				506A66191A449C3800D4833D /* LBGolfShotProfiler.m */,
 				506A661A1A449C3800D4833D /* LBScorecardUtils.h */,
@@ -650,6 +655,7 @@
 				50FC3A911A71FABA00B23A96 /* UIFont+LBFont.m in Sources */,
 				506A66261A449C3800D4833D /* LBScorecardUtils.m in Sources */,
 				50191F651A43842A00548963 /* main.m in Sources */,
+				50F4831B1A774B0F007CEF61 /* LBDisplayUtils.m in Sources */,
 				506A66271A449C3800D4833D /* UIColor+LBColours.m in Sources */,
 				50191FD51A43907700548963 /* LBSignScorecardVC.m in Sources */,
 				506A66251A449C3800D4833D /* LBGolfShotProfiler.m in Sources */,

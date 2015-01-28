@@ -87,11 +87,17 @@
         //TODO make this into an ios alert and a cancel button
         NSLog(@"this scorecard will be closed");
         // cancel scorecard
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Scorecard is currently active" message:@"This scorecard must be completed or disgarded before starting a new card." delegate:self cancelButtonTitle:@"Continue" otherButtonTitles:@"Cancel", nil];
+        [alert show];
+    } else {
+        [self startScorecard];
     }
+}
+- (void) startScorecard
+{
     // start scorecard,
     [LBRestFacade asynchPlayNextUpcomingRound: [[[LBDataManager sharedInstance] upcomingCompetitionRoundList] objectAtIndex:0] withSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         // parse response object as scorecard
-        
         [[LBDataManager sharedInstance] setScorecard: [[LBScorecard alloc] initWithDictionary: (NSDictionary *)responseObject error: nil]];
         // TODO add error handling
         NSLog(@"play now button clicked");
@@ -141,6 +147,16 @@
     {
         LBPlayGolfVC *playGolfVC = (LBPlayGolfVC *)segue.destinationViewController;
         [playGolfVC loadCourseInView: [[[LBDataManager sharedInstance] scorecard] course]];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"%@", [NSString stringWithFormat:@"%li", (long)buttonIndex]);
+    if([[alertView buttonTitleAtIndex:buttonIndex] isEqualToString:@"Continue"])
+    {
+        NSLog(@"continue round button clicked");
+        [self performSegueWithIdentifier:@"seg_ctnRnd" sender:self];
     }
 }
 

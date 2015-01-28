@@ -11,6 +11,7 @@
 #import "LBLeaderboardWebVC.h"
 #import "LBDataManager.h"
 #import "LBRestFacade.h"
+#import "LBDisplayUtils.h"
 
 @interface LBRoundSummaryVC ()
 
@@ -98,15 +99,14 @@ LBLeaderboardWebVC *leaderboardVC;
         NSLog(@"Scorecard Submit Success");
         // move to new screen
         [self performSegueWithIdentifier:@"seg_sgnscrcrd" sender:self];
+        [LBDisplayUtils disableButton: self.submitScorecardBtn];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         
         NSLog(@"Scorecard Submit Failure");
-        
-        // surface error
-        
+        [LBDisplayUtils reenableButton: self.submitScorecardBtn];
+        #warning surface error
     }];
-
 }
 
 - (void) loadViewWithScoreArray: (NSArray*) scoreArray andCourse: (LBCourse*) course {

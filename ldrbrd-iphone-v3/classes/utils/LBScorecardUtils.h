@@ -14,6 +14,8 @@
 
 +(BOOL) isScoreArrayComplete: (NSMutableArray *) scoreArray forScorecard: (LBScorecard *) scorecard;
 
++(LBCourseHole *) firstIncompleteHole: (NSArray *) scoreArray forScorecard: (LBScorecard *) scorecard orLastHole: (BOOL) sendLastHole;
+
 +(int) countScore: (NSArray*) scoreArray;
 
 +(int) countBelowPar: (NSArray*) scoreArray onCourse: (LBCourse *) course;

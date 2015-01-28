@@ -15,4 +15,11 @@
 + (UIColor *)LBGreyColour;
 + (UIColor *)LBOrangeColour;
 
++ (UIColor *) LBHoleScoreEagle;
++ (UIColor *) LBHoleScoreBirdie;
++ (UIColor *) LBHoleScorePar;
++ (UIColor *) LBHoleScoreBogie;
++ (UIColor *) LBHoleScoreDBogie;
++ (UIColor *) LBHoleScoreDBogiePlus;
+
 @end

@@ -15,4 +15,12 @@
 + (UIFont *) LBSliderMedium;
 + (UIFont *) LBSliderLarge;
 
++ (UIFont *) LBHoleScoreBasic;
++ (UIFont *) LBHoleScoreEagle;
++ (UIFont *) LBHoleScoreBirdie;
++ (UIFont *) LBHoleScorePar;
++ (UIFont *) LBHoleScoreBogie;
++ (UIFont *) LBHoleScoreDBogie;
++ (UIFont *) LBHoleScoreDBogiePlus;
+
 @end

@@ -9,6 +9,7 @@
 #import "LBLandingVC.h"
 #import "LBRestFacade.h"
 #import "LBUserDefaults.h"
+#import "LBDisplayUtils.h"
 
 @interface LBLandingVC ()
 
@@ -74,7 +75,9 @@
         } else {
             [warningLabel setText: @"authentication failed"];
         }
+        [LBDisplayUtils reenableButton:self.loginButton];
     }];
+    [LBDisplayUtils disableButton:self.loginButton];
 }
 
 - (void)didReceiveMemoryWarning

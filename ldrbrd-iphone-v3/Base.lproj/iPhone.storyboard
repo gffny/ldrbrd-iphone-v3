@@ -99,7 +99,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="LEADERBOARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dN0-Aa-tQs">
-                                            <rect key="frame" x="20" y="6.5" width="151" height="29.5"/>
+                                            <rect key="frame" x="20" y="4" width="151" height="32"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="25"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,7 +228,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="0A560D41-8118-4B43-B06B-1161940B6E18" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="C73C64CF-36F1-4F82-A6C3-DA851B4A2507" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tXI-fR-Fpw">
@@ -326,7 +326,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="0A560D41-8118-4B43-B06B-1161940B6E18" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="C73C64CF-36F1-4F82-A6C3-DA851B4A2507" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aet-ZI-Ado">
@@ -1027,11 +1027,25 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLt-ZX-hJL">
-                                <rect key="frame" x="110" y="81" width="100" height="125"/>
+                                <rect key="frame" x="110" y="40" width="100" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="80"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="W28-Nf-WjN">
+                                <rect key="frame" x="20" y="147" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error message" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZY7-1S-HMV">
+                                <rect key="frame" x="20" y="164" width="284" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1042,6 +1056,8 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="Cn0-Mb-m3q" id="Ucu-WM-fGW"/>
                         <outlet property="distanceLabel" destination="Mtf-NF-HSb" id="l79-U4-0tg"/>
+                        <outlet property="errorLabel" destination="W28-Nf-WjN" id="inA-Et-8Iv"/>
+                        <outlet property="errorMessage" destination="ZY7-1S-HMV" id="JGc-2L-oXA"/>
                         <outlet property="holeScoreLabel" destination="qLt-ZX-hJL" id="Q95-s7-KSF"/>
                         <outlet property="indexLabel" destination="esm-kk-URp" id="Jn7-1M-CaR"/>
                         <outlet property="parLabel" destination="eZB-Gt-8Ns" id="b0Q-qA-Toc"/>
@@ -1501,7 +1517,7 @@
                                                     <rect key="frame" x="265" y="18" width="35" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="40"/>
-                                                    <color key="textColor" patternImage="0A560D41-8118-4B43-B06B-1161940B6E18" colorSpace="pattern"/>
+                                                    <color key="textColor" patternImage="C73C64CF-36F1-4F82-A6C3-DA851B4A2507" colorSpace="pattern"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="20" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last round 10/05/2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Se5-Gu-dnO">
@@ -1666,7 +1682,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0A560D41-8118-4B43-B06B-1161940B6E18" width="256" height="256">
+        <image name="C73C64CF-36F1-4F82-A6C3-DA851B4A2507" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPj9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQsLzI4O1UkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw

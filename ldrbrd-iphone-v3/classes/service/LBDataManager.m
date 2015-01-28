@@ -76,6 +76,18 @@
     return NO;
 }
 
+-(void) loadScoreArray: (NSArray *) holeScoreArray
+{
+    //is the holeScoreArray valid?
+    if(holeScoreArray != NULL && holeScoreArray.count > 0) {
+        // iterate through the array, setting the score for each hole
+        for(int holeNumber = 0; holeNumber < holeScoreArray.count; holeNumber ++)
+        {
+            [self setScore: (NSNumber *) holeScoreArray[holeNumber] forHole: [NSNumber numberWithInt:holeNumber]];
+        }
+    }
+}
+
 -(NSInteger) getScoreForHole: (NSNumber *) holeNumber
 {
     if(_primaryScoreArray != NULL && [holeNumber intValue] <= _primaryScoreArray.count)

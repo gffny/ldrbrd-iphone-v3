@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LBMainVC : UIViewController<UITableViewDelegate, UITableViewDataSource,  UIScrollViewDelegate> {
+@interface LBMainVC : UIViewController<UITableViewDelegate, UITableViewDataSource,  UIScrollViewDelegate, UIAlertViewDelegate> {
     
     IBOutlet UIScrollView *scroller;
 }
